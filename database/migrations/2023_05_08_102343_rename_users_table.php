@@ -13,12 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('categorias_producto', function (Blueprint $table) {
-            $table->id();
-            $table->string('Nombre', 445)->nullable();
-            $table->tinyInteger('estado')->nullable()->default(1);
-            $table->timestamps();
-        });
+        //Schema::rename('users', 'usuarios');
     }
 
     /**
@@ -28,6 +23,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('categorias_producto');
+        //
     }
 };

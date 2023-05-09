@@ -5,8 +5,6 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Str;
 use App\Models\User;
-use Illuminate\Support\Facades\DB;
-
 
 class UserSeeder extends Seeder
 {
@@ -17,33 +15,20 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        // Define algunos datos de ejemplo
-        $usuarios = [
+        // Default credentials
+        \App\Models\User::insert([
             [
-                'username' => 'juan123',
-                'password' => bcrypt('secreto'),
-                'name' => 'Juan',
-                'last_name' => 'Pérez',
-                'address' => 'Av. Siempre Viva 123',
-                'cellphone' => '555-1234',
-                'type' => 'Admin',
-                'empresa_id' => 1
-            ],
-            [
-                'username' => 'ana456',
-                'password' => bcrypt('123456'),
-                'name' => 'Ana',
-                'last_name' => 'García',
-                'address' => 'Calle Falsa 123',
-                'cellphone' => '555-5678',
-                'type' => 'User',
-                'empresa_id' => null
-            ],
-            // Agrega más usuarios aquí
-        ];
+                'name' => 'Left4code',
+                'email' => 'midone@left4code.com',
+                'email_verified_at' => now(),
+                'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
+                'gender' => 'male',
+                'active' => 1,
+                'remember_token' => Str::random(10)
+            ]
+        ]);
 
-        // Inserta los datos en la tabla de usuarios
-        DB::table('usuarios')->insert($usuarios);
-
+        // Fake users
+        User::factory()->times(9)->create();
     }
 }

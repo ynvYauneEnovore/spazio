@@ -13,15 +13,15 @@
             <a href="" class="-intro-x hidden md:flex">
                 <img alt="Midone - HTML Admin Template" class="w-6" src="{{ asset('dist/images/logo.svg') }}">
                 <span class="text-white text-lg ml-3">
-                    Rubick
+                    aGYMsa
                 </span>
             </a>
             <!-- END: Logo -->
             <!-- BEGIN: Breadcrumb -->
             <nav aria-label="breadcrumb" class="-intro-x h-full mr-auto">
                 <ol class="breadcrumb breadcrumb-light">
-                    <li class="breadcrumb-item"><a href="#">Application</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                    <li class="breadcrumb-item"><a href="#">Ver</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">sa</li>
                 </ol>
             </nav>
             <!-- END: Breadcrumb -->

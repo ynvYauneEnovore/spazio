@@ -26,11 +26,6 @@ return new class extends Migration
             $table->string('Celular', 45)->nullable();
             $table->string('Actividad', 445)->nullable();
             $table->string('Logo', 45)->nullable();
-            $table->foreignId('fk_user_id_empresa')
-                ->references('id')
-                ->on('usuarios')
-                ->onDelete('cascade')
-                ->onUpdate('cascade');
             $table->timestamps();
         });
     }

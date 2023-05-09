@@ -23,16 +23,7 @@ return new class extends Migration
             $table->integer('min')->nullable();
             $table->integer('max')->nullable();
             $table->decimal('stock', 19, 2)->default(0);
-            $table->foreignId('fk_usuarios_id_servicios')
-                ->references('id')
-                ->on('usuarios')
-                ->onDelete('cascade')
-                ->onUpdate('cascade');
-            $table->foreignId('fk_categorias_servicio')
-                ->references('id')
-                ->on('categorias_producto')
-                ->onDelete('cascade')
-                ->onUpdate('cascade');
+
             $table->timestamps();
         });
     }
