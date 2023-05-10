@@ -18,7 +18,7 @@ class SideMenu
                 'title' => 'Adminitración General',
                 'sub_menu' => [
                     'dashboard-overview-1' => [
-                        'icon' => '',
+                        'icon' => 'list',
                         'route_name' => 'dashboard-overview-1',
                         'params' => [
                             'layout' => 'side-menu',
