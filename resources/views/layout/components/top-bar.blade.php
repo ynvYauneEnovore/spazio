@@ -3,15 +3,15 @@
     <!-- BEGIN: Breadcrumb -->
     <nav aria-label="breadcrumb" class="-intro-x mr-auto hidden sm:flex">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Application</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+            <li class="breadcrumb-item"><a href="#">Agymsa</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Adminitración</li>
         </ol>
     </nav>
     <!-- END: Breadcrumb -->
     <!-- BEGIN: Search -->
     <div class="intro-x relative mr-3 sm:mr-6">
         <div class="search hidden sm:block">
-            <input type="text" class="search__input form-control border-transparent" placeholder="Search...">
+            <input type="text" class="search__input form-control border-transparent" placeholder="Búsqueda">
             <i data-lucide="search" class="search__icon dark:text-slate-500"></i>
         </div>
         <a class="notification sm:hidden" href="">
@@ -107,28 +107,28 @@
                 <li><hr class="dropdown-divider border-white/[0.08]"></li>
                 <li>
                     <a href="" class="dropdown-item hover:bg-white/5">
-                        <i data-lucide="user" class="w-4 h-4 mr-2"></i> Profile
+                        <i data-lucide="user" class="w-4 h-4 mr-2"></i> Perfil
                     </a>
                 </li>
                 <li>
                     <a href="" class="dropdown-item hover:bg-white/5">
-                        <i data-lucide="edit" class="w-4 h-4 mr-2"></i> Add Account
+                        <i data-lucide="edit" class="w-4 h-4 mr-2"></i> Agregar cuenta
                     </a>
                 </li>
                 <li>
                     <a href="" class="dropdown-item hover:bg-white/5">
-                        <i data-lucide="lock" class="w-4 h-4 mr-2"></i> Reset Password
+                        <i data-lucide="lock" class="w-4 h-4 mr-2"></i>Olividaste tu contraceña?
                     </a>
                 </li>
                 <li>
                     <a href="" class="dropdown-item hover:bg-white/5">
-                        <i data-lucide="help-circle" class="w-4 h-4 mr-2"></i> Help
+                        <i data-lucide="help-circle" class="w-4 h-4 mr-2"></i> Ayuda
                     </a>
                 </li>
                 <li><hr class="dropdown-divider border-white/[0.08]"></li>
                 <li>
                     <a href="{{ route('logout') }}" class="dropdown-item hover:bg-white/5">
-                        <i data-lucide="toggle-right" class="w-4 h-4 mr-2"></i> Logout
+                        <i data-lucide="toggle-right" class="w-4 h-4 mr-2"></i> Salir
                     </a>
                 </li>
             </ul>

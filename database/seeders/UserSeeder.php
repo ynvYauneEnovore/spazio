@@ -5,6 +5,8 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Str;
 use App\Models\User;
+use App\Models\Cliente;
+
 
 class UserSeeder extends Seeder
 {
@@ -24,11 +26,30 @@ class UserSeeder extends Seeder
                 'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
                 'gender' => 'male',
                 'active' => 1,
-                'remember_token' => Str::random(10)
+                'remember_token' => Str::random(0)
             ]
         ]);
 
         // Fake users
         User::factory()->times(9)->create();
+
+        \App\Models\Cliente::insert([
+            [
+                'codigoCliente' => '21321',
+                'nombre' => 'ynvols',
+                'direccion' => 'Olñaeta Final',
+                'sexo' => 'masculino',
+                'telefono' => '+59173467157',
+                'celular' => '+59165659',
+                'email' => 'usuarios99@agymsa.bo',
+                'nvisitas' => '5',
+                'puntosAcumulados' => '213',
+                'ultimaVisita' => '2023-10-05',
+                'fechaNacimiento' => '1999-12-04',
+            ]
+        ]);
+
+        // Fake users
+        Cliente::factory()->times(9)->create();
     }
 }

@@ -3,8 +3,14 @@
 @section('body')
     <body class="py-5">
         @yield('content')
-        @include('../layout/components/dark-mode-switcher')
-        @include('../layout/components/main-color-switcher')
+        <?php
+        /*
+        *   Contenido comentado por evitar la visibilidad
+        *   de algunos componetes.
+        *   @include('../layout/components/dark-mode-switcher')
+        *   @include('../layout/components/main-color-switcher')
+        */
+        ?>
 
         <!-- BEGIN: JS Assets-->
         <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
