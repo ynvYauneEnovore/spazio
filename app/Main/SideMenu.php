@@ -15,7 +15,7 @@ class SideMenu
         return [
             'dashboard' => [
                 'icon' => 'home',
-                'title' => 'Dashboard',
+                'title' => 'Clientes',
                 'sub_menu' => [
                     'dashboard-overview-1' => [
                         'icon' => '',
@@ -23,7 +23,7 @@ class SideMenu
                         'params' => [
                             'layout' => 'side-menu',
                         ],
-                        'title' => 'Overview 1'
+                        'title' => 'Lista'
                     ],
                     'dashboard-overview-2' => [
                         'icon' => '',
@@ -31,16 +31,8 @@ class SideMenu
                         'params' => [
                             'layout' => 'side-menu',
                         ],
-                        'title' => 'Overview 2'
+                        'title' => 'Editar'
                     ],
-                    'dashboard-overview-3' => [
-                        'icon' => '',
-                        'route_name' => 'dashboard-overview-3',
-                        'params' => [
-                            'layout' => 'side-menu',
-                        ],
-                        'title' => 'Overview 3'
-                    ]
                 ]
             ],
             'menu-layout' => [
@@ -124,7 +116,7 @@ class SideMenu
             'devider',
             'crud' => [
                 'icon' => 'edit',
-                'title' => 'Crud',
+                'title' => 'Adminitración de Usuarios',
                 'sub_menu' => [
                     'crud-data-list' => [
                         'icon' => '',
@@ -132,7 +124,7 @@ class SideMenu
                         'params' => [
                             'layout' => 'side-menu'
                         ],
-                        'title' => 'Data List'
+                        'title' => 'Lista de Usuarios'
                     ],
                     'crud-form' => [
                         'icon' => '',
@@ -140,7 +132,7 @@ class SideMenu
                         'params' => [
                             'layout' => 'side-menu'
                         ],
-                        'title' => 'Form'
+                        'title' => 'Agregar'
                     ]
                 ]
             ],
