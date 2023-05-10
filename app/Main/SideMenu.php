@@ -23,26 +23,27 @@ class SideMenu
                         'params' => [
                             'layout' => 'side-menu',
                         ],
-                        'title' => 'Lista'
+                        'title' => 'Asistencia'
                     ],
                     'dashboard-overview-2' => [
-                        'icon' => '',
+                        'icon' => 'list',
                         'route_name' => 'dashboard-overview-2',
                         'params' => [
                             'layout' => 'side-menu',
                         ],
                         'title' => 'Editar'
                     ],
+                    'dashboard-overview-3' => [
+                        'icon' => '',
+                        'route_name' => 'dashboard-overview-3',
+                        'params' => [
+                            'layout' => 'side-menu',
+                        ],
+                        'title' => 'Resportes'
+                    ],
                 ]
             ],
-            'calendar' => [
-                'icon' => 'calendar',
-                'route_name' => 'calendar',
-                'params' => [
-                    'layout' => 'side-menu'
-                ],
-                'title' => 'Calendar'
-            ],
+
             'devider',
             'crud' => [
                 'icon' => 'edit',

@@ -15,7 +15,7 @@ class SimpleMenu
         return [
             'dashboard' => [
                 'icon' => 'home',
-                'title' => 'Dashboard',
+                'title' => 'Asistencia',
                 'sub_menu' => [
                     'dashboard-overview-1' => [
                         'icon' => '',
@@ -31,7 +31,7 @@ class SimpleMenu
                         'params' => [
                             'layout' => 'simple-menu',
                         ],
-                        'title' => 'Overview 2'
+                        'title' => 'Lista'
                     ],
                     'dashboard-overview-3' => [
                         'icon' => '',
@@ -39,7 +39,7 @@ class SimpleMenu
                         'params' => [
                             'layout' => 'simple-menu',
                         ],
-                        'title' => 'Overview 3'
+                        'title' => 'Editar'
                     ]
                 ]
             ],
