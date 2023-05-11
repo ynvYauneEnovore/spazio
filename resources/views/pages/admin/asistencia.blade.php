@@ -18,7 +18,7 @@
                   <div class="mt-6 -mb-6 intro-y">
                     <div class="alert alert-dismissible show box bg-danger text-white flex items-center mb-6" role="alert">
                         <span>
-                            Nuevo cliente
+                            Ingreso de cliente
                             <button data-tw-toggle="modal" data-tw-target="#static-backdrop-modal-preview" class="rounded-md bg-white bg-opacity-20 dark:bg-darkmode-300 hover:bg-opacity-30 py-0.5 px-2 -my-3 ml-2" #static-backdrop-modal-preview>Agregar</button>
                         </span>
                         <button type="button" class="btn-close text-white" data-bs-dismiss="alert" aria-label="Close">

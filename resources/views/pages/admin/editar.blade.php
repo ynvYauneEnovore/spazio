@@ -1,7 +1,7 @@
 @extends('../layout/' . $layout)
 
 @section('subhead')
-    <title>Editar</title>
+    <title>Editar_new</title>
 @endsection
 
 @section('subcontent')
@@ -10,7 +10,7 @@
             <div class="grid grid-cols-12 gap-6">
                 <!-- BEGIN: Notification -->
                 <div class="col-span-12 mt-6 -mb-6 intro-y">
-                    <div class="alert alert-dismissible show box bg-success text-white flex items-center mb-6" role="alert">
+                    <div class="alert alert-dismissible show box bg-danger text-white flex items-center mb-6" role="alert">
                         Aqui puedes agregar nuevos clientes
                         <button type="button" class="btn-close text-white" data-bs-dismiss="alert" aria-label="Close">
                             <i data-lucide="x" class="w-4 h-4"></i>

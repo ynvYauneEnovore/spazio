@@ -118,6 +118,35 @@ class SideMenu
                     ],
                 ]
             ],
+            'devider',
+            'components' => [
+                'icon' => 'layers',
+                'title' => 'Educación',
+                'sub_menu' => [
+                    'grid' => [
+                        'icon' => 'layers',
+                        'title' => 'Cursos',
+                        'sub_menu' => [
+                            'regular-table' => [
+                                'icon' => 'layers',
+                                'route_name' => 'regular-table',
+                                'params' => [
+                                    'layout' => 'side-menu'
+                                ],
+                                'title' => 'Regular Table'
+                            ],
+                            'tabulator' => [
+                                'icon' => '',
+                                'route_name' => 'tabulator',
+                                'params' => [
+                                    'layout' => 'side-menu'
+                                ],
+                                'title' => 'Tabulator'
+                            ]
+                        ]
+                    ],
+                ]
+            ],
         ];
     }
 }

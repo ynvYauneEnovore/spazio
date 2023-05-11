@@ -31,7 +31,7 @@ class PageController extends Controller
      */
     public function dashboardOverview2()
     {
-        return view('pages/dashboard-overview-2');
+        return view('pages/admin/editar');
     }
 
     /**
@@ -42,7 +42,7 @@ class PageController extends Controller
      */
     public function dashboardOverview3()
     {
-        return view('pages/dashboard-overview-3');
+        return view('pages/admin/reporte');
     }
 
     /**
