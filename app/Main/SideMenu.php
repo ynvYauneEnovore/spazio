@@ -44,6 +44,9 @@ class SideMenu
                 ]
             ],
 
+            
+
+
             'devider',
             'crud' => [
                 'icon' => 'edit',
@@ -121,7 +124,7 @@ class SideMenu
             'devider',
             'components' => [
                 'icon' => 'layers',
-                'title' => 'Educación',
+                'title' => 'Clases',
                 'sub_menu' => [
                     'grid' => [
                         'icon' => 'layers',
