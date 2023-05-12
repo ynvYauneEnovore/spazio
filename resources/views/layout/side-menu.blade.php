@@ -9,7 +9,7 @@
     <div class="flex">
         <!-- BEGIN: Side Menu -->
         <nav class="side-nav">
-            <a href="" class="intro-x flex items-center pl-5 pt-4">
+            <a href="/" class="intro-x flex items-center pl-5 pt-4">
                 <img alt="mancuerna-x" class="w-6" src="{{ asset('img/logo-1.png') }}">
                 <span class="hidden xl:block text-white text-lg ml-3">
                     aGYMsa
