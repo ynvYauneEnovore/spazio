@@ -1,7 +1,7 @@
 @extends('../layout/' . $layout)
 
 @section('subhead')
-    <title>Editar_new</title>
+    <title>Editar</title>
 @endsection
 
 @section('subcontent')

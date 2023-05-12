@@ -14,7 +14,7 @@ class SideMenu
     {
         return [
             'dashboard' => [
-                'icon' => 'home',
+                'icon' => 'edit',
                 'title' => 'Adminitración',
                 'sub_menu' => [
                     'dashboard-overview-1' => [
@@ -23,7 +23,7 @@ class SideMenu
                         'params' => [
                             'layout' => 'side-menu',
                         ],
-                        'title' => 'Asistencia'
+                        'title' => 'Asistencia',
                     ],
                     'dashboard-overview-2' => [
                         'icon' => 'list',
@@ -38,18 +38,19 @@ class SideMenu
 
 
             'servicios' => [
-                'icon' => 'book',
+                'icon' => 'shopping-cart
+                ',
                 'title' => 'Servicios',
                 'sub_menu' => [
-                    'dashboard-overview-1' => [
-                        'icon' => 'list',
+                    'serviciosClases' => [
+                        'icon' => 'edit',
                         'route_name' => 'serviciosClases',
                         'params' => [
                             'layout' => 'side-menu',
                         ],
                         'title' => 'Clases'
                     ],
-                    'dashboard-overview-2' => [
+                    'serviciosProductos' => [
                         'icon' => 'list',
                         'route_name' => 'serviciosProductos',
                         'params' => [
@@ -60,113 +61,39 @@ class SideMenu
                 ]
             ],
 
-
-
-
-
             'devider',
-            'crud' => [
-                'icon' => 'edit',
-                'title' => 'Adminitración de Usuarios',
+
+            'preguntas' => [
+                'icon' => 'alert-triangle',
+                'title' => 'Información',
                 'sub_menu' => [
-                    'crud-data-list' => [
-                        'icon' => '',
-                        'route_name' => 'crud-data-list',
+                    'preguntaDocumentacion' => [
+                        'icon' => 'edit',
+                        'route_name' => 'preguntaDocumentacion',
                         'params' => [
-                            'layout' => 'side-menu'
+                            'layout' => 'side-menu',
                         ],
-                        'title' => 'Lista de Usuario'
+                        'title' => 'Documentación'
                     ],
-                    'crud-form' => [
-                        'icon' => '',
-                        'route_name' => 'crud-form',
+                    'preguntaFaq' => [
+                        'icon' => 'list',
+                        'route_name' => 'preguntaFaq',
                         'params' => [
-                            'layout' => 'side-menu'
+                            'layout' => 'side-menu',
                         ],
-                        'title' => 'Form'
+                        'title' => 'FAQ'
                     ],
-                    'users-layout-1' => [
-                        'icon' => '',
-                        'route_name' => 'users-layout-1',
+                    'preguntaContactanos' => [
+                        'icon' => 'list',
+                        'route_name' => 'preguntaContactanos',
                         'params' => [
-                            'layout' => 'side-menu'
+                            'layout' => 'side-menu',
                         ],
-                        'title' => 'Layout 1'
+                        'title' => 'Contáctos'
                     ],
                 ]
             ],
-            'profile' => [
-                'icon' => 'trello',
-                'title' => 'Profile',
-                'sub_menu' => [
-                    'profile-overview-3' => [
-                        'icon' => '',
-                        'route_name' => 'profile-overview-3',
-                        'params' => [
-                            'layout' => 'side-menu'
-                        ],
-                        'title' => 'Overview 3'
-                    ]
-                ]
-            ],
-            'devider',
-            'components' => [
-                'icon' => 'inbox',
-                'title' => 'Casilleros',
-                'sub_menu' => [
-                    'grid' => [
-                        'icon' => '',
-                        'title' => 'Grid',
-                        'sub_menu' => [
-                            'regular-table' => [
-                                'icon' => '',
-                                'route_name' => 'regular-table',
-                                'params' => [
-                                    'layout' => 'side-menu'
-                                ],
-                                'title' => 'Regular Table'
-                            ],
-                            'tabulator' => [
-                                'icon' => '',
-                                'route_name' => 'tabulator',
-                                'params' => [
-                                    'layout' => 'side-menu'
-                                ],
-                                'title' => 'Tabulator'
-                            ]
-                        ]
-                    ],
-                ]
-            ],
-            'devider',
-            'components' => [
-                'icon' => 'layers',
-                'title' => 'Clases',
-                'sub_menu' => [
-                    'grid' => [
-                        'icon' => 'layers',
-                        'title' => 'Cursos',
-                        'sub_menu' => [
-                            'regular-table' => [
-                                'icon' => 'layers',
-                                'route_name' => 'regular-table',
-                                'params' => [
-                                    'layout' => 'side-menu'
-                                ],
-                                'title' => 'Regular Table'
-                            ],
-                            'tabulator' => [
-                                'icon' => '',
-                                'route_name' => 'tabulator',
-                                'params' => [
-                                    'layout' => 'side-menu'
-                                ],
-                                'title' => 'Tabulator'
-                            ]
-                        ]
-                    ],
-                ]
-            ],
+
         ];
     }
 }

@@ -1,7 +1,7 @@
 @extends('../layout/' . $layout)
 
 @section('subhead')
-    <title>Clases</title>
+    <title>Contáctanos</title>
 @endsection
 
 @section('subcontent')
@@ -11,7 +11,7 @@
                 <!-- BEGIN: Notification -->
                 <div class="col-span-12 mt-6 -mb-6 intro-y">
                     <div class="alert alert-dismissible show box bg-danger text-white flex items-center mb-6" role="alert">
-                        Clases
+                    Contáctanos
                         <button type="button" class="btn-close text-white" data-bs-dismiss="alert" aria-label="Close">
                             <i data-lucide="x" class="w-4 h-4"></i>
                         </button>
