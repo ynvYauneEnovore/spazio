@@ -1,7 +1,7 @@
 @extends('../layout/' . $layout)
 
 @section('subhead')
-    <title>Adminitración</title>
+    <title>Adminitración ? new</title>
 @endsection
 
 @section('subcontent')
