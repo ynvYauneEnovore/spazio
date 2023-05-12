@@ -35,6 +35,8 @@ Route::middleware('auth')->group(function() {
         Route::get('/', 'dashboardOverview1')->name('dashboard-overview-1');
         Route::get('dashboard-overview-2-page', 'dashboardOverview2')->name('dashboard-overview-2');
         Route::get('dashboard-overview-3-page', 'dashboardOverview3')->name('dashboard-overview-3');
+        Route::get('serviciosClases', 'serviciosClases')->name('serviciosClases');
+        Route::get('serviciosProductos', 'serviciosProductos')->name('serviciosProductos');
         Route::get('inbox-page', 'inbox')->name('inbox');
         Route::get('file-manager-page', 'fileManager')->name('file-manager');
         Route::get('point-of-sale-page', 'pointOfSale')->name('point-of-sale');

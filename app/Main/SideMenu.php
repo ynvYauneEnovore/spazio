@@ -15,7 +15,7 @@ class SideMenu
         return [
             'dashboard' => [
                 'icon' => 'home',
-                'title' => 'Adminitración General',
+                'title' => 'Adminitración',
                 'sub_menu' => [
                     'dashboard-overview-1' => [
                         'icon' => 'list',
@@ -33,18 +33,35 @@ class SideMenu
                         ],
                         'title' => 'Editar'
                     ],
-                    'dashboard-overview-3' => [
-                        'icon' => '',
-                        'route_name' => 'dashboard-overview-3',
+                ]
+            ],
+
+
+            'servicios' => [
+                'icon' => 'book',
+                'title' => 'Servicios',
+                'sub_menu' => [
+                    'dashboard-overview-1' => [
+                        'icon' => 'list',
+                        'route_name' => 'serviciosClases',
                         'params' => [
                             'layout' => 'side-menu',
                         ],
-                        'title' => 'Resportes'
+                        'title' => 'Clases'
+                    ],
+                    'dashboard-overview-2' => [
+                        'icon' => 'list',
+                        'route_name' => 'serviciosProductos',
+                        'params' => [
+                            'layout' => 'side-menu',
+                        ],
+                        'title' => 'Productos'
                     ],
                 ]
             ],
 
-            
+
+
 
 
             'devider',

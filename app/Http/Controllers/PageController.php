@@ -24,7 +24,7 @@ class PageController extends Controller
     }
 
     /**
-     * Show specified view.
+     * Adminitración general: sub-menu:editar.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -35,7 +35,7 @@ class PageController extends Controller
     }
 
     /**
-     * Show specified view.
+     * Adminitración general: sub-menu:reporte.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -45,8 +45,31 @@ class PageController extends Controller
         return view('pages/admin/reporte');
     }
 
+    public function serviciosClases()
+    {
+        return view('pages/productos/clases', [
+            // Specify the base layout.
+            // Eg: 'side-menu', 'simple-menu', 'top-menu', 'login'
+            // The default value is 'side-menu'
+
+            // 'layout' => 'side-menu'
+        ]);
+    }
+
     /**
-     * Show specified view.
+     * Adminitración general: sub-menu:editar.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function serviciosProductos()
+    {
+        return view('pages/productos/productos');
+    }
+
+
+    /**
+     * Adminitración general: sub-menu:asistencia.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
