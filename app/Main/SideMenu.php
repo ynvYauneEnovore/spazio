@@ -61,6 +61,46 @@ class SideMenu
                 ]
             ],
 
+
+            'gestion' => [
+                'icon' => 'dollar-sign',
+                'title' => 'Gestión financiera',
+                'sub_menu' => [
+                    'gestionBalance' => [
+                        'icon' => 'edit',
+                        'route_name' => 'gestionBalance',
+                        'params' => [
+                            'layout' => 'side-menu',
+                        ],
+                        'title' => 'Balances'
+                    ],
+                    'gestionContabilidad' => [
+                        'icon' => 'list',
+                        'route_name' => 'gestionContabilidad',
+                        'params' => [
+                            'layout' => 'side-menu',
+                        ],
+                        'title' => 'Contabilidad'
+                    ],
+                    'gestionFinanzas' => [
+                        'icon' => 'list',
+                        'route_name' => 'gestionFinanzas',
+                        'params' => [
+                            'layout' => 'side-menu',
+                        ],
+                        'title' => 'Finanzas'
+                    ],
+                    'gestionInformes' => [
+                        'icon' => 'list',
+                        'route_name' => 'gestionInformes',
+                        'params' => [
+                            'layout' => 'side-menu',
+                        ],
+                        'title' => 'Informes contables'
+                    ],
+                ]
+            ],
+
             'devider',
 
             'preguntas' => [

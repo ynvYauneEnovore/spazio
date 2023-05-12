@@ -4,16 +4,19 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Pagination Language Lines
+    | Líneas de idioma para restablecimiento de contraseña
     |--------------------------------------------------------------------------
     |
-    | The following language lines are used by the paginator library to build
-    | the simple pagination links. You are free to change them to anything
-    | you want to customize your views to better match your application.
+    | Las siguientes líneas de idioma son las líneas predeterminadas que corresponden a las razones
+    | dadas por el gestor de contraseñas en caso de que falle un intento de actualización de contraseña,
+    | como por ejemplo un token no válido o una contraseña nueva inválida.
     |
     */
 
-    'previous' => '&laquo; Previous',
-    'next' => 'Next &raquo;',
+    'reset' => '¡Tu contraseña ha sido restablecida!',
+    'sent' => '¡Hemos enviado por correo electrónico el enlace para restablecer tu contraseña!',
+    'throttled' => 'Por favor, espera antes de intentarlo de nuevo.',
+    'token' => 'Este token de restablecimiento de contraseña no es válido.',
+    'user' => "No podemos encontrar un usuario con esa dirección de correo electrónico.",
 
 ];

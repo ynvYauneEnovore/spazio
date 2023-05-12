@@ -40,5 +40,10 @@ Route::middleware('auth')->group(function() {
         Route::get('preguntaDocumentacion', 'preguntaDocumentacion')->name('preguntaDocumentacion');
         Route::get('preguntaFaq', 'preguntaFaq')->name('preguntaFaq');
         Route::get('preguntaContactanos', 'preguntaContactanos')->name('preguntaContactanos');
+        Route::get('gestionBalance', 'gestionBalance')->name('gestionBalance');
+        Route::get('gestionContabilidad', 'gestionContabilidad')->name('gestionContabilidad');
+        Route::get('gestionFinanzas', 'gestionFinanzas')->name('gestionFinanzas');
+        Route::get('gestionInformes', 'gestionInformes')->name('gestionInformes');
+
     });
 });

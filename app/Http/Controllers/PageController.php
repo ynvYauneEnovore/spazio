@@ -100,4 +100,52 @@ class PageController extends Controller
     {
         return view('pages/preguntas/pregunta');
     }
+
+
+      /**
+     * Adminitración general: sub-menu:editar.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function gestionBalance()
+    {
+        return view('pages/gestion/balance');
+    }
+
+
+      /**
+     * Adminitración general: sub-menu:editar.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function gestionContabilidad()
+    {
+        return view('pages/gestion/contabilidad');
+    }
+
+
+      /**
+     * Adminitración general: sub-menu:editar.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function gestionFinanzas()
+    {
+        return view('pages/gestion/finanzas');
+    }
+
+
+      /**
+     * Adminitración general: sub-menu:editar.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function gestionInformes()
+    {
+        return view('pages/gestion/informes');
+    }
 }
