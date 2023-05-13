@@ -8,15 +8,6 @@
     <div class="grid grid-cols-12 gap-6">
         <div class="col-span-12 2xl:col-span-9">
             <div class="grid grid-cols-12 gap-6">
-                <!-- BEGIN: Notification -->
-                <div class="col-span-12 mt-6 -mb-6 intro-y">
-                    <div class="alert alert-dismissible show box bg-danger text-white flex items-center mb-6" role="alert">
-                        Clases
-                        <button type="button" class="btn-close text-white" data-bs-dismiss="alert" aria-label="Close">
-                            <i data-lucide="x" class="w-4 h-4"></i>
-                        </button>
-                    </div>
-                </div>
                 <div class="col-span-12 2xl:col-span-3">
             <div class="2xl:border-l -mb-10 pb-10">
                 <div class="2xl:pl-6 grid grid-cols-12 gap-6">
@@ -31,6 +22,7 @@
                                 <i data-lucide="chevron-right" class="w-4 h-4"></i>
                             </button>
                         </div>
+
                         <div class="mt-5 intro-x">
                             <div class="box zoom-in">
                                 <div class="tiny-slider" id="important-notes">
@@ -67,6 +59,90 @@
                     </div>
                     <!-- END: Important Notes -->
                     <div class="col-span-12 lg:col-span-6 mt-6">
+                    <div class="box p-8 relative overflow-hidden bg-primary intro-y">
+                        <div class="leading-[2.15rem] w-full sm:w-72 text-white text-xl -mt-3">Transact safely with Lender’s Fund Account (RDL)</div>
+                        <div class="w-full sm:w-72 leading-relaxed text-white/70 dark:text-slate-500 mt-3">Apply now, quick registration.</div>
+                        <button class="btn w-32 bg-white dark:bg-darkmode-800 dark:text-white mt-6 sm:mt-10">Start Now</button>
+                        <img class="hidden sm:block absolute top-0 right-0 w-2/5 -mt-3 mr-2" alt="natacion" src="{{ asset('img/natacion.png') }}" style="width: 80px; height: auto;">
+                    </div>
+                </div>
+                <!-- END: Ads 1 -->
+                <!-- BEGIN: Ads 2 -->
+                <div class="col-span-12 lg:col-span-6 mt-6">
+                    <div class="box p-8 relative overflow-hidden intro-y">
+                        <div class="leading-[2.15rem] w-full sm:w-52 text-primary dark:text-white text-xl -mt-3">Invite friends to get <span class="font-medium">FREE</span> bonuses!</div>
+                        <div class="w-full sm:w-60 leading-relaxed text-slate-500 mt-2">Get a IDR 100,000 voucher by inviting your friends to fund #BecomeMember</div>
+                        <div class="w-48 relative mt-6 cursor-pointer tooltip" title="Copy referral link">
+                            <input type="text" class="form-control" value="https://dashboard.in">
+                            <i data-lucide="copy" class="absolute right-0 top-0 bottom-0 my-auto mr-4 w-4 h-4"></i>
+                        </div>
+                        <img class="hidden sm:block absolute top-0 right-0 w-2/5 -mt-0 mr-2" alt="pesas" src="{{ asset('img/pesas.png') }}" style="width: 230px; height: auto;">
+                    </div>
+                </div>
+                <div class="col-span-12 lg:col-span-6 mt-6">
+                    <div class="box p-8 relative overflow-hidden bg-primary intro-y">
+                        <div class="leading-[2.15rem] w-full sm:w-72 text-white text-xl -mt-3">Transact safely with Lender’s Fund Account (RDL)</div>
+                        <div class="w-full sm:w-72 leading-relaxed text-white/70 dark:text-slate-500 mt-3">Apply now, quick registration.</div>
+                        <button class="btn w-32 bg-white dark:bg-darkmode-800 dark:text-white mt-6 sm:mt-10">Start Now</button>
+                        <img class="hidden sm:block absolute top-0 right-0 w-2/5 -mt-3 mr-2" alt="natacion" src="{{ asset('img/natacion.png') }}" style="width: 80px; height: auto;">
+                    </div>
+                </div>
+                <!-- END: Ads 1 -->
+                <!-- BEGIN: Ads 2 -->
+                <div class="col-span-12 lg:col-span-6 mt-6">
+                    <div class="box p-8 relative overflow-hidden intro-y">
+                        <div class="leading-[2.15rem] w-full sm:w-52 text-primary dark:text-white text-xl -mt-3">Invite friends to get <span class="font-medium">FREE</span> bonuses!</div>
+                        <div class="w-full sm:w-60 leading-relaxed text-slate-500 mt-2">Get a IDR 100,000 voucher by inviting your friends to fund #BecomeMember</div>
+                        <div class="w-48 relative mt-6 cursor-pointer tooltip" title="Copy referral link">
+                            <input type="text" class="form-control" value="https://dashboard.in">
+                            <i data-lucide="copy" class="absolute right-0 top-0 bottom-0 my-auto mr-4 w-4 h-4"></i>
+                        </div>
+                        <img class="hidden sm:block absolute top-0 right-0 w-2/5 -mt-0 mr-2" alt="pesas" src="{{ asset('img/pesas.png') }}" style="width: 230px; height: auto;">
+                    </div>
+                </div>
+                <div class="col-span-12 lg:col-span-6 mt-6">
+                    <div class="box p-8 relative overflow-hidden bg-primary intro-y">
+                        <div class="leading-[2.15rem] w-full sm:w-72 text-white text-xl -mt-3">Transact safely with Lender’s Fund Account (RDL)</div>
+                        <div class="w-full sm:w-72 leading-relaxed text-white/70 dark:text-slate-500 mt-3">Apply now, quick registration.</div>
+                        <button class="btn w-32 bg-white dark:bg-darkmode-800 dark:text-white mt-6 sm:mt-10">Start Now</button>
+                        <img class="hidden sm:block absolute top-0 right-0 w-2/5 -mt-3 mr-2" alt="natacion" src="{{ asset('img/natacion.png') }}" style="width: 80px; height: auto;">
+                    </div>
+                </div>
+                <!-- END: Ads 1 -->
+                <!-- BEGIN: Ads 2 -->
+                <div class="col-span-12 lg:col-span-6 mt-6">
+                    <div class="box p-8 relative overflow-hidden intro-y">
+                        <div class="leading-[2.15rem] w-full sm:w-52 text-primary dark:text-white text-xl -mt-3">Invite friends to get <span class="font-medium">FREE</span> bonuses!</div>
+                        <div class="w-full sm:w-60 leading-relaxed text-slate-500 mt-2">Get a IDR 100,000 voucher by inviting your friends to fund #BecomeMember</div>
+                        <div class="w-48 relative mt-6 cursor-pointer tooltip" title="Copy referral link">
+                            <input type="text" class="form-control" value="https://dashboard.in">
+                            <i data-lucide="copy" class="absolute right-0 top-0 bottom-0 my-auto mr-4 w-4 h-4"></i>
+                        </div>
+                        <img class="hidden sm:block absolute top-0 right-0 w-2/5 -mt-0 mr-2" alt="pesas" src="{{ asset('img/pesas.png') }}" style="width: 230px; height: auto;">
+                    </div>
+                </div>
+                <div class="col-span-12 lg:col-span-6 mt-6">
+                    <div class="box p-8 relative overflow-hidden bg-primary intro-y">
+                        <div class="leading-[2.15rem] w-full sm:w-72 text-white text-xl -mt-3">Transact safely with Lender’s Fund Account (RDL)</div>
+                        <div class="w-full sm:w-72 leading-relaxed text-white/70 dark:text-slate-500 mt-3">Apply now, quick registration.</div>
+                        <button class="btn w-32 bg-white dark:bg-darkmode-800 dark:text-white mt-6 sm:mt-10">Start Now</button>
+                        <img class="hidden sm:block absolute top-0 right-0 w-2/5 -mt-3 mr-2" alt="natacion" src="{{ asset('img/natacion.png') }}" style="width: 80px; height: auto;">
+                    </div>
+                </div>
+                <!-- END: Ads 1 -->
+                <!-- BEGIN: Ads 2 -->
+                <div class="col-span-12 lg:col-span-6 mt-6">
+                    <div class="box p-8 relative overflow-hidden intro-y">
+                        <div class="leading-[2.15rem] w-full sm:w-52 text-primary dark:text-white text-xl -mt-3">Invite friends to get <span class="font-medium">FREE</span> bonuses!</div>
+                        <div class="w-full sm:w-60 leading-relaxed text-slate-500 mt-2">Get a IDR 100,000 voucher by inviting your friends to fund #BecomeMember</div>
+                        <div class="w-48 relative mt-6 cursor-pointer tooltip" title="Copy referral link">
+                            <input type="text" class="form-control" value="https://dashboard.in">
+                            <i data-lucide="copy" class="absolute right-0 top-0 bottom-0 my-auto mr-4 w-4 h-4"></i>
+                        </div>
+                        <img class="hidden sm:block absolute top-0 right-0 w-2/5 -mt-0 mr-2" alt="pesas" src="{{ asset('img/pesas.png') }}" style="width: 230px; height: auto;">
+                    </div>
+                </div>
+                <div class="col-span-12 lg:col-span-6 mt-6">
                     <div class="box p-8 relative overflow-hidden bg-primary intro-y">
                         <div class="leading-[2.15rem] w-full sm:w-72 text-white text-xl -mt-3">Transact safely with Lender’s Fund Account (RDL)</div>
                         <div class="w-full sm:w-72 leading-relaxed text-white/70 dark:text-slate-500 mt-3">Apply now, quick registration.</div>
