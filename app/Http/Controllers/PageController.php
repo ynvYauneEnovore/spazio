@@ -148,4 +148,139 @@ class PageController extends Controller
     {
         return view('pages/gestion/informes');
     }
+
+       /**
+     * Adminitración general: sub-menu:editar.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function asiServices()
+    {
+        return view('pages/admin/asi');
+    }
+
+       /**
+     * Creación del cliente.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function crearClientes()
+    {
+        return view('pages/clientes/crear');
+    }
+       /**
+     * Ver el cliente.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function verClientes()
+    {
+        return view('pages/clientes/ver');
+    }
+       /**
+     * Editar el cliente.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function editarClientes()
+    {
+        return view('pages/clientes/editar');
+    }
+
+           /**
+     * Creación del entrenador.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function crearEntrenadores()
+    {
+        return view('pages/entrenadores/crear');
+    }
+       /**
+     * Ver el entrenador.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function verEntrenadores()
+    {
+        return view('pages/entrenadores/ver');
+    }
+       /**
+     * Editar el entrenador.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function editarEntrenadores()
+    {
+        return view('pages/entrenadores/editar');
+    }
+
+             /**
+     * Creación del entrenador.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function crearClases()
+    {
+        return view('pages/clases/crear');
+    }
+       /**
+     * Ver el entrenador.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function verClases()
+    {
+        return view('pages/clases/ver');
+    }
+       /**
+     * Editar el entrenador.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function editarClases()
+    {
+        return view('pages/clases/editar');
+    }
+
+                 /**
+     * Creación del entrenador.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function crearCasilleros()
+    {
+        return view('pages/casilleros/crear');
+    }
+       /**
+     * Ver el entrenador.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function verCasilleros()
+    {
+        return view('pages/casilleros/ver');
+    }
+       /**
+     * Editar el entrenador.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function editarCasilleros()
+    {
+        return view('pages/casilleros/editar');
+    }
 }

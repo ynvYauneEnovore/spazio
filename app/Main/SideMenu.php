@@ -13,21 +13,51 @@ class SideMenu
     public static function menu()
     {
         return [
-            'dashboard' => [
-                'icon' => 'edit',
-                'title' => 'Adminitración',
-                'sub_menu' => [
+
                     'dashboard-overview-1' => [
-                        'icon' => 'list',
+                        'icon' => 'home',
                         'route_name' => 'dashboard-overview-1',
                         'params' => [
                             'layout' => 'side-menu',
                         ],
-                        'title' => 'Asistencia',
+                        'title' => 'Inicio',
                     ],
-                    'dashboard-overview-2' => [
+
+            'asiServices' => [
+                'icon' => 'edit',
+                'route_name' => 'asiServices',
+                'params' => [
+                    'layout' => 'side-menu',
+                ],
+                'title' => 'Asistencias'
+            ],
+
+
+            'devider',
+
+            'clientes' => [
+                'icon' => 'user-check',
+                'title' => 'Clientes',
+                'sub_menu' => [
+                    'crearClientes' => [
+                        'icon' => 'edit',
+                        'route_name' => 'crearClientes',
+                        'params' => [
+                            'layout' => 'side-menu',
+                        ],
+                        'title' => 'Crear'
+                    ],
+                    'verClientes' => [
                         'icon' => 'list',
-                        'route_name' => 'dashboard-overview-2',
+                        'route_name' => 'verClientes',
+                        'params' => [
+                            'layout' => 'side-menu',
+                        ],
+                        'title' => 'Ver'
+                    ],
+                    'editarClientes' => [
+                        'icon' => 'edit',
+                        'route_name' => 'editarClientes',
                         'params' => [
                             'layout' => 'side-menu',
                         ],
@@ -37,99 +67,97 @@ class SideMenu
             ],
 
 
-            'servicios' => [
-                'icon' => 'shopping-cart
-                ',
-                'title' => 'Servicios',
+            'entrenadores' => [
+                'icon' => 'user-check',
+                'title' => 'Entrenadores',
                 'sub_menu' => [
-                    'serviciosClases' => [
+                    'crearEntrenadores' => [
                         'icon' => 'edit',
-                        'route_name' => 'serviciosClases',
+                        'route_name' => 'crearEntrenadores',
                         'params' => [
                             'layout' => 'side-menu',
                         ],
-                        'title' => 'Clases'
+                        'title' => 'Crear'
                     ],
-                    'serviciosProductos' => [
+                    'verEntrenadores' => [
                         'icon' => 'list',
-                        'route_name' => 'serviciosProductos',
+                        'route_name' => 'verEntrenadores',
                         'params' => [
                             'layout' => 'side-menu',
                         ],
-                        'title' => 'Productos'
+                        'title' => 'Ver'
+                    ],
+                    'editarEntrenadores' => [
+                        'icon' => 'edit',
+                        'route_name' => 'editarEntrenadores',
+                        'params' => [
+                            'layout' => 'side-menu',
+                        ],
+                        'title' => 'Editar'
                     ],
                 ]
             ],
 
 
-            'gestion' => [
-                'icon' => 'dollar-sign',
-                'title' => 'Gestión financiera',
+            'clases' => [
+                'icon' => 'user-check',
+                'title' => 'Clases',
                 'sub_menu' => [
-                    'gestionBalance' => [
+                    'crearClases' => [
                         'icon' => 'edit',
-                        'route_name' => 'gestionBalance',
+                        'route_name' => 'crearClases',
                         'params' => [
                             'layout' => 'side-menu',
                         ],
-                        'title' => 'Balances'
+                        'title' => 'Crear'
                     ],
-                    'gestionContabilidad' => [
+                    'verClases' => [
                         'icon' => 'list',
-                        'route_name' => 'gestionContabilidad',
+                        'route_name' => 'verClases',
                         'params' => [
                             'layout' => 'side-menu',
                         ],
-                        'title' => 'Contabilidad'
+                        'title' => 'Ver'
                     ],
-                    'gestionFinanzas' => [
-                        'icon' => 'list',
-                        'route_name' => 'gestionFinanzas',
+                    'editarClases' => [
+                        'icon' => 'edit',
+                        'route_name' => 'editarClases',
                         'params' => [
                             'layout' => 'side-menu',
                         ],
-                        'title' => 'Finanzas'
-                    ],
-                    'gestionInformes' => [
-                        'icon' => 'list',
-                        'route_name' => 'gestionInformes',
-                        'params' => [
-                            'layout' => 'side-menu',
-                        ],
-                        'title' => 'Informes contables'
+                        'title' => 'Editar'
                     ],
                 ]
             ],
 
-            'devider',
 
-            'preguntas' => [
-                'icon' => 'alert-triangle',
-                'title' => 'Información',
+            'casilleros' => [
+                'icon' => 'user-check',
+                'title' => 'Casilleros',
                 'sub_menu' => [
-                    'preguntaDocumentacion' => [
+                    'crearCasilleros' => [
                         'icon' => 'edit',
-                        'route_name' => 'preguntaDocumentacion',
+                        'route_name' => 'crearCasilleros',
                         'params' => [
                             'layout' => 'side-menu',
                         ],
-                        'title' => 'Documentación'
+                        'title' => 'Crear'
                     ],
-                    'preguntaFaq' => [
+                    'verCasilleros' => [
                         'icon' => 'list',
-                        'route_name' => 'preguntaFaq',
+                        'route_name' => 'verCasilleros',
                         'params' => [
                             'layout' => 'side-menu',
                         ],
-                        'title' => 'FAQ'
+                        'title' => 'Ver'
                     ],
-                    'preguntaContactanos' => [
-                        'icon' => 'list',
-                        'route_name' => 'preguntaContactanos',
+                    'editarCasilleros' => [
+                        'icon' => 'edit',
+                        'route_name' => 'editarCasilleros',
                         'params' => [
                             'layout' => 'side-menu',
                         ],
-                        'title' => 'Contáctos'
+                        'title' => 'Editar'
                     ],
                 ]
             ],

@@ -44,6 +44,24 @@ Route::middleware('auth')->group(function() {
         Route::get('gestionContabilidad', 'gestionContabilidad')->name('gestionContabilidad');
         Route::get('gestionFinanzas', 'gestionFinanzas')->name('gestionFinanzas');
         Route::get('gestionInformes', 'gestionInformes')->name('gestionInformes');
+        Route::get('asiServices', 'asiServices')->name('asiServices');
+
+        Route::get('verClientes', 'verClientes')->name('verClientes');
+        Route::get('editarClientes', 'editarClientes')->name('editarClientes');
+        Route::get('crearClientes', 'crearClientes')->name('crearClientes');
+
+        Route::get('verEntrenadores', 'verEntrenadores')->name('verEntrenadores');
+        Route::get('editarEntrenadores', 'editarEntrenadores')->name('editarEntrenadores');
+        Route::get('crearEntrenadores', 'crearEntrenadores')->name('crearEntrenadores');
+
+        Route::get('verClases', 'verClases')->name('verClases');
+        Route::get('editarClases', 'editarClases')->name('editarClases');
+        Route::get('crearClases', 'crearClases')->name('crearClases');
+
+        Route::get('verCasilleros', 'verCasilleros')->name('verCasilleros');
+        Route::get('editarCasilleros', 'editarCasilleros')->name('editarCasilleros');
+        Route::get('crearCasilleros', 'crearCasilleros')->name('crearCasilleros');
+
 
     });
 });
