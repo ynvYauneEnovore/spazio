@@ -12,9 +12,9 @@ class PageController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function dashboardOverview1()
+    public function inicioAdmin()
     {
-        return view('pages/admin/asistencia', [
+        return view('pages/admin/inicio', [
             // Specify the base layout.
             // Eg: 'side-menu', 'simple-menu', 'top-menu', 'login'
             // The default value is 'side-menu'
@@ -23,141 +23,15 @@ class PageController extends Controller
         ]);
     }
 
-    /**
-     * Adminitración general: sub-menu:editar.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function dashboardOverview2()
-    {
-        return view('pages/admin/editar');
-    }
-
-    /**
-     * Adminitración general: sub-menu:reporte.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function dashboardOverview3()
-    {
-        return view('pages/admin/reporte');
-    }
-
-
-    /**
-     * Adminitración general: sub-menu:editar.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function serviciosProductos()
-    {
-        return view('pages/productos/productos');
-    }
-
-        /**
-     * Adminitración general: sub-menu:editar.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function serviciosClases()
-    {
-        return view('pages/productos/clases');
-    }
-
-      /**
-     * Adminitración general: sub-menu:editar.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function preguntaDocumentacion()
-    {
-        return view('pages/preguntas/documentacion');
-    }
-
-      /**
-     * Adminitración general: sub-menu:editar.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function preguntaContactanos()
-    {
-        return view('pages/preguntas/contactanos');
-    }
-
-      /**
-     * Adminitración general: sub-menu:editar.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function preguntaFaq()
-    {
-        return view('pages/preguntas/pregunta');
-    }
-
-
-      /**
-     * Adminitración general: sub-menu:editar.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function gestionBalance()
-    {
-        return view('pages/gestion/balance');
-    }
-
-
-      /**
-     * Adminitración general: sub-menu:editar.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function gestionContabilidad()
-    {
-        return view('pages/gestion/contabilidad');
-    }
-
-
-      /**
-     * Adminitración general: sub-menu:editar.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function gestionFinanzas()
-    {
-        return view('pages/gestion/finanzas');
-    }
-
-
-      /**
-     * Adminitración general: sub-menu:editar.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function gestionInformes()
-    {
-        return view('pages/gestion/informes');
-    }
-
        /**
-     * Adminitración general: sub-menu:editar.
+     * Adminitración de la asistencias.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function asiServices()
+    public function asistenciasAdmin()
     {
-        return view('pages/admin/asi');
+        return view('pages/admin/asistencias');
     }
 
        /**
@@ -223,7 +97,7 @@ class PageController extends Controller
     }
 
              /**
-     * Creación del entrenador.
+     * Crear las clases
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -233,7 +107,7 @@ class PageController extends Controller
         return view('pages/clases/crear');
     }
        /**
-     * Ver el entrenador.
+     * Ver las clases.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -243,7 +117,7 @@ class PageController extends Controller
         return view('pages/clases/ver');
     }
        /**
-     * Editar el entrenador.
+     * Editar clases.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -254,17 +128,17 @@ class PageController extends Controller
     }
 
                  /**
-     * Creación del entrenador.
+     * Asignar el casillero.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function crearCasilleros()
+    public function asignarCasilleros()
     {
-        return view('pages/casilleros/crear');
+        return view('pages/casilleros/asignar');
     }
        /**
-     * Ver el entrenador.
+     * Ver el casillero.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -274,13 +148,118 @@ class PageController extends Controller
         return view('pages/casilleros/ver');
     }
        /**
-     * Editar el entrenador.
+     * Liberar el casillero.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function editarCasilleros()
+    public function liberarCasilleros()
     {
-        return view('pages/casilleros/editar');
+        return view('pages/casilleros/liberar');
+    }
+
+
+                   /**
+     * Editar el producto.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function editarProducto()
+    {
+        return view('pages/productos/editar');
+    }
+       /**
+     * Ver el producto.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function verProducto()
+    {
+        return view('pages/productos/ver');
+    }
+       /**
+     * Creación del producto.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function crearProducto()
+    {
+        return view('pages/productos/crear');
+    }
+
+                    /**
+     * ingreso del sauna.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function ingresarSauna()
+    {
+        return view('pages/sauna/ingresar');
+    }
+       /**
+     * Salida del sauna.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function salirSauna()
+    {
+        return view('pages/sauna/salir');
+    }
+       /**
+     * Estado del sauna.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function disponibilidadSauna()
+    {
+        return view('pages/sauna/disponibilidad');
+    }
+
+                     /**
+     * Vista de los reportes de ventas
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function ventasReporte()
+    {
+        return view('pages/reporte/ventas');
+    }
+       /**
+     * Vista de los reportes de asistencias
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function asistenciasReporte()
+    {
+        return view('pages/reporte/asistencias');
+    }
+       /**
+     * Vista de los reportes de ingresos
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function ingresosReporte()
+    {
+        return view('pages/reporte/ingresos');
+    }
+
+          /**
+     * Documentación.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function documentacionSoporte()
+    {
+        return view('pages/soporte/documentacion');
     }
 }

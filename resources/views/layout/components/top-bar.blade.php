@@ -2,10 +2,11 @@
 <div class="top-bar">
     <!-- BEGIN: Breadcrumb -->
     <nav aria-label="breadcrumb" class="-intro-x mr-auto hidden sm:flex">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Agymsa</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Adminitración</li>
-        </ol>
+        <div class="container">
+            <a href="#">
+                <img src="/img/log.png" width="100"/>
+            </a>
+        </div>
     </nav>
     <!-- END: Breadcrumb -->
     <!-- BEGIN: Search -->

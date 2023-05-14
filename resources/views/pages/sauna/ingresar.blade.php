@@ -1,7 +1,7 @@
 @extends('../layout/' . $layout)
 
 @section('subhead')
-    <title>Editar</title>
+    <title>Ingresar</title>
 @endsection
 
 @section('subcontent')
@@ -17,7 +17,7 @@
                   <div class="mt-6 -mb-6 intro-y">
                     <div class="alert alert-dismissible show box bg-success text-white flex items-center mb-6" role="alert">
                         <span>
-                           Editar
+                           Ingresar
                         </span>
                         <button type="button" class="btn-close text-white" data-bs-dismiss="alert" aria-label="Close">
                             <i data-lucide="x" class="w-4 h-4"></i>

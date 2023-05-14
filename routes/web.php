@@ -32,19 +32,9 @@ Route::middleware('auth')->group(function() {
     Route::controller(PageController::class)->group(function() {
 
 
-        Route::get('/', 'dashboardOverview1')->name('dashboard-overview-1');
-        Route::get('dashboard-overview-2-page', 'dashboardOverview2')->name('dashboard-overview-2');
-        Route::get('dashboard-overview-3-page', 'dashboardOverview3')->name('dashboard-overview-3');
-        Route::get('serviciosClases', 'serviciosClases')->name('serviciosClases');
-        Route::get('serviciosProductos', 'serviciosProductos')->name('serviciosProductos');
-        Route::get('preguntaDocumentacion', 'preguntaDocumentacion')->name('preguntaDocumentacion');
-        Route::get('preguntaFaq', 'preguntaFaq')->name('preguntaFaq');
-        Route::get('preguntaContactanos', 'preguntaContactanos')->name('preguntaContactanos');
-        Route::get('gestionBalance', 'gestionBalance')->name('gestionBalance');
-        Route::get('gestionContabilidad', 'gestionContabilidad')->name('gestionContabilidad');
-        Route::get('gestionFinanzas', 'gestionFinanzas')->name('gestionFinanzas');
-        Route::get('gestionInformes', 'gestionInformes')->name('gestionInformes');
-        Route::get('asiServices', 'asiServices')->name('asiServices');
+        Route::get('/', 'inicioAdmin')->name('inicioAdmin');
+
+        Route::get('asistenciasAdmin', 'asistenciasAdmin')->name('asistenciasAdmin');
 
         Route::get('verClientes', 'verClientes')->name('verClientes');
         Route::get('editarClientes', 'editarClientes')->name('editarClientes');
@@ -58,9 +48,23 @@ Route::middleware('auth')->group(function() {
         Route::get('editarClases', 'editarClases')->name('editarClases');
         Route::get('crearClases', 'crearClases')->name('crearClases');
 
+        Route::get('asignarCasilleros', 'asignarCasilleros')->name('asignarCasilleros');
+        Route::get('liberarCasilleros', 'liberarCasilleros')->name('liberarCasilleros');
         Route::get('verCasilleros', 'verCasilleros')->name('verCasilleros');
-        Route::get('editarCasilleros', 'editarCasilleros')->name('editarCasilleros');
-        Route::get('crearCasilleros', 'crearCasilleros')->name('crearCasilleros');
+
+        Route::get('crearProducto', 'crearProducto')->name('crearProducto');
+        Route::get('verProducto', 'verProducto')->name('verProducto');
+        Route::get('editarProducto', 'editarProducto')->name('editarProducto');
+
+        Route::get('ingresarSauna', 'ingresarSauna')->name('ingresarSauna');
+        Route::get('salirSauna', 'salirSauna')->name('salirSauna');
+        Route::get('disponibilidadSauna', 'disponibilidadSauna')->name('disponibilidadSauna');
+
+        Route::get('ventasReporte', 'ventasReporte')->name('ventasReporte');
+        Route::get('asistenciasReporte', 'asistenciasReporte')->name('asistenciasReporte');
+        Route::get('ingresosReporte', 'ingresosReporte')->name('ingresosReporte');
+
+        Route::get('documentacionSoporte', 'documentacionSoporte')->name('documentacionSoporte');
 
 
     });
