@@ -35,6 +35,8 @@ Route::middleware('auth')->group(function() {
         Route::get('/', 'inicioAdmin')->name('inicioAdmin');
 
         Route::get('asistenciasAdmin', 'asistenciasAdmin')->name('asistenciasAdmin');
+        Route::get('productosAdmin', 'productosAdmin')->name('productosAdmin');
+
 
         Route::get('verClientes', 'verClientes')->name('verClientes');
         Route::get('editarClientes', 'editarClientes')->name('editarClientes');

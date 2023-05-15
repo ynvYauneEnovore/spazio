@@ -20,9 +20,15 @@
                         <span>
                             Ingreso de cliente
 
-                            <button class="btn btn-dark mr-1 mb-2 text-white"> Entrada <i data-loading-icon="circles" data-color="white" class="w-4 h-4 ml-2"></i> </button>
-                            <button class="btn btn-dark mr-1 mb-2 text-white"> Salida <i data-loading-icon="hearts" data-color="white" class="w-4 h-4 ml-2"></i> </button>
-                            <button class="btn btn-rounded-dark mr-1 mb-2 text-white"> Compra <i data-loading-icon="grid" data-color="white" class="w-4 h-4 ml-2"></i> </button>
+<a href="{{ route('asistenciasAdmin') }}" class="btn btn-dark mr-1 mb-2 text-white">
+  ASISTENCIA
+  <i data-loading-icon="hearts" data-color="white" class="w-4 h-4 ml-2"></i>
+</a>
+
+<a href="{{ route('productosAdmin') }}" class="btn btn-dark mr-1 mb-2 text-white">
+  PRODUCTO
+  <i data-loading-icon="circles" data-color="white" class="w-4 h-4 ml-2"></i>
+</a>
                         </span>
                         <button type="button" class="btn-close text-white" data-bs-dismiss="alert" aria-label="Close">
                             <i data-lucide="x" class="w-4 h-4"></i>

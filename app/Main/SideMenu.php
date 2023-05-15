@@ -23,14 +23,24 @@ class SideMenu
                         'title' => 'Inicio',
                     ],
 
-            'asistenciasAdmin' => [
-                'icon' => 'edit',
-                'route_name' => 'asistenciasAdmin',
-                'params' => [
-                    'layout' => 'side-menu',
-                ],
-                'title' => 'Asistencias'
-            ],
+                        'asistenciasAdmin' => [
+                            'icon' => 'edit',
+                            'route_name' => 'asistenciasAdmin',
+                            'params' => [
+                                'layout' => 'side-menu',
+                            ],
+                            'title' => 'Asistencias'
+                        ],
+
+                        'productosAdmin' => [
+                            'icon' => 'shopping-bag',
+                            'route_name' => 'productosAdmin',
+                            'params' => [
+                                'layout' => 'side-menu',
+                            ],
+                            'title' => 'Productos'
+                        ],
+
 
 
             'devider',

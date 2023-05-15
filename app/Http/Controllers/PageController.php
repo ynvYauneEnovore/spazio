@@ -34,6 +34,17 @@ class PageController extends Controller
         return view('pages/admin/asistencias');
     }
 
+
+         /**
+     * Adminitración de la asistencias.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function productosAdmin()
+    {
+        return view('pages/admin/productos');
+    }
        /**
      * Creación del cliente.
      *

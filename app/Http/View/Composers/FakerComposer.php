@@ -204,25 +204,25 @@ class FakerComposer
     public function fakeFoods()
     {
         $foods = collect([
-            [ 'name' => 'Vanilla Latte', 'image' => 'food-beverage-1.jpg' ],
-            [ 'name' => 'Milkshake', 'image' => 'food-beverage-2.jpg' ],
-            [ 'name' => 'Soft Drink', 'image' => 'food-beverage-3.jpg' ],
-            [ 'name' => 'Root Beer', 'image' => 'food-beverage-4.jpg' ],
-            [ 'name' => 'Pocari', 'image' => 'food-beverage-5.jpg' ],
-            [ 'name' => 'Ultimate Burger', 'image' => 'food-beverage-6.jpg' ],
-            [ 'name' => 'Hotdog', 'image' => 'food-beverage-7.jpg' ],
-            [ 'name' => 'Avocado Burger', 'image' => 'food-beverage-8.jpg' ],
-            [ 'name' => 'Spaghetti Fettucine Aglio with Beef Bacon', 'image' => 'food-beverage-9.jpg' ],
-            [ 'name' => 'Spaghetti Fettucine Aglio with Smoked Salmon', 'image' => 'food-beverage-10.jpg' ],
-            [ 'name' => 'Curry Penne and Cheese', 'image' => 'food-beverage-11.jpg' ],
-            [ 'name' => 'French Fries', 'image' => 'food-beverage-12.jpg' ],
-            [ 'name' => 'Virginia Cheese Fries', 'image' => 'food-beverage-13.jpg' ],
-            [ 'name' => 'Virginia Cheese Wedges', 'image' => 'food-beverage-14.jpg' ],
-            [ 'name' => 'Fried/Grilled Banana', 'image' => 'food-beverage-15.jpg' ],
-            [ 'name' => 'Crispy Mushroom', 'image' => 'food-beverage-16.jpg' ],
-            [ 'name' => 'Fried Calamari', 'image' => 'food-beverage-17.jpg' ],
-            [ 'name' => 'Chicken Wings', 'image' => 'food-beverage-18.jpg' ],
-            [ 'name' => 'Snack Platter', 'image' => 'food-beverage-19.jpg' ]
+            [ 'name' => 'Producto 17', 'image' => 'gym-0.jpeg' ],
+            [ 'name' => 'Producto 18', 'image' => 'gym-1.jpeg' ],
+            [ 'name' => 'Producto 16', 'image' => 'gym-2.jpeg' ],
+            [ 'name' => 'Producto 15', 'image' => 'gym-3.jpeg' ],
+            [ 'name' => 'Producto 14', 'image' => 'gym-4.jpeg' ],
+            [ 'name' => 'Producto13', 'image' => 'gym-5.jpeg' ],
+            [ 'name' => 'Producto1', 'image' => 'gym-6.jpeg' ],
+            [ 'name' => 'Producto 2', 'image' => 'gym-7.jpeg' ],
+            [ 'name' => 'Producto 3', 'image' => 'gym-8.jpeg' ],
+            [ 'name' => 'Producto 4', 'image' => 'gym-9.jpeg' ],
+            [ 'name' => 'Producto 5', 'image' => 'gym-10.jpeg' ],
+            [ 'name' => 'Producto 5', 'image' => 'gym-11.jpeg' ],
+            [ 'name' => 'Producto 6', 'image' => 'gym-12.jpeg' ],
+            [ 'name' => 'Producto 7', 'image' => 'gym-13.jpeg' ],
+            [ 'name' => 'Producto 8', 'image' => 'gym-14.jpeg' ],
+            [ 'name' => 'Producto 9', 'image' => 'gym-15.jpeg' ],
+            [ 'name' => 'Producto 10', 'image' => 'gym-16.jpeg' ],
+            [ 'name' => 'Producto 11', 'image' => 'gym-17.jpeg' ],
+            [ 'name' => 'Producto 12', 'image' => 'gym-18.jpeg' ]
         ]);
 
         return $foods->shuffle();
