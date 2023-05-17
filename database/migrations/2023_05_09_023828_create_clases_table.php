@@ -4,28 +4,26 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration
+class CreateClasesTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
     public function up()
     {
         Schema::create('clases', function (Blueprint $table) {
             $table->id();
+            $table->string('nombre')->nullable();
+            $table->string('sigla')->nullable();
+            $table->decimal('precio_1', 19, 2)->nullable();
+            $table->decimal('precio_2', 19, 2)->nullable();
+            $table->decimal('precio_3', 19, 2)->nullable();
+            $table->time('Horainicio')->nullable();
+            $table->time('horafin')->nullable();
+            $table->tinyInteger('estado')->nullable()->default(1);
             $table->timestamps();
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
         Schema::dropIfExists('clases');
     }
-};
+}

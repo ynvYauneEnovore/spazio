@@ -8,10 +8,14 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2 class="intro-x font-bold text-2xl xl:text-3xl text-center xl:text-left">Registro de nuevo producto</h2>
-            </div>
-            <div class="pull-right">
-                <a class="btn btn-success" href="{{ route('productos.create') }}">Crear</a>
+                <h2 class="intro-x font-bold text-2xl xl:text-3xl text-center xl:text-left">
+                    Registro de nuevo producto<hr>
+                    <a class="btn btn-success" href="{{ route('productos.create') }}">Crear
+                        <i data-lucide="plus" class="tooltip w-10 h-10 ml-1.5" title="Agrega un producto"></i>
+                    </a>
+
+                </h2>
+
             </div>
         </div>
     </div>

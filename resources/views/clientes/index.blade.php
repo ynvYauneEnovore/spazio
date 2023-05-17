@@ -8,10 +8,12 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2 class="intro-x font-bold text-2xl xl:text-3xl text-center xl:text-left">Registro de nuevo cliente</h2>
-            </div>
-            <div class="pull-right">
-                <a class="btn btn-success" href="{{ route('clientes.create') }}">Crear</a>
+                <h2 class="intro-x font-bold text-2xl xl:text-3xl text-center xl:text-left">
+                    Registro de nuevo cliente<hr>
+                    <a class="btn btn-success" href="{{ route('clientes.create') }}">Crear
+                        <i data-lucide="plus" class="tooltip w-10 h-10 ml-1.5" title="Agrega un usuario"></i>
+                    </a>
+                </h2>
             </div>
         </div>
     </div>
@@ -51,7 +53,7 @@
                 <td>
                     <form action="{{ route('clientes.destroy', $cliente->id) }}" method="POST">
 
-                        <a class="btn btn-info" href="{{ route('clientes.show', $cliente->id) }}">Ver</a>
+                        <a class="btn btn-warning" href="{{ route('clientes.show', $cliente->id) }}">Ver</a>
 
                         <a class="btn btn-primary" href="{{ route('clientes.edit', $cliente->id) }}">Editar</a>
 
