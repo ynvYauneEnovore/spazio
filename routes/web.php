@@ -7,6 +7,7 @@ use App\Http\Controllers\DarkModeController;
 use App\Http\Controllers\ColorSchemeController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ClientesController;
+use App\Http\Controllers\ProductosController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,7 +33,11 @@ Route::middleware('auth')->group(function() {
 
         //rutas de los crud
         Route::resource('products', ProductController::class);
+
         Route::resource('clientes', ClientesController::class);
+
+        Route::resource('productos', ProductosController::class);
+
 
 
         Route::get('/', 'inicioAdmin')->name('inicioAdmin');

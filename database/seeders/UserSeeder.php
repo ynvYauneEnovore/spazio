@@ -6,6 +6,7 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Str;
 use App\Models\User;
 use App\Models\Cliente;
+use App\Models\Productos;
 
 
 class UserSeeder extends Seeder
@@ -31,7 +32,7 @@ class UserSeeder extends Seeder
         ]);
 
         // Fake users
-        User::factory()->times(1)->create();
+        User::factory()->times(0)->create();
 
         \App\Models\Cliente::insert([
             [
@@ -50,6 +51,23 @@ class UserSeeder extends Seeder
         ]);
 
         // Fake users
-        Cliente::factory()->times(50)->create();
+        Cliente::factory()->times(10)->create();
+
+
+        \App\Models\Productos::insert([
+            [
+                       'Nombre' => 'Agua',
+                       'Precio' => '3.50',
+                       'Descripcion' => 'Botella de agua mediana',
+                       'Estado' => '10',
+                       'imagen' => 'img',
+                       'min' => '200',
+                       'max' => '20000',
+                       'stock' => '155.5',
+                   ]
+               ]);
+
+               // Fake Productos
+               Productos::factory()->times(80)->create();
     }
 }
