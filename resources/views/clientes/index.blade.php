@@ -25,7 +25,6 @@
     <table class="table table-bordered">
         <tr>
             <th>No</th>
-            <th>Código Cliente</th>
             <th>Nombre</th>
 
             <th>Sexo</th>
@@ -40,7 +39,6 @@
         @foreach ($clientes as $cliente)
             <tr>
                 <td>{{ ++$i }}</td>
-                <td>{{ $cliente->codigoCliente }}</td>
                 <td>{{ $cliente->nombre }}</td>
 
                 <td>{{ $cliente->sexo }}</td>

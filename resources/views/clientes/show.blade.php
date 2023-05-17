@@ -10,9 +10,10 @@
             <div class="pull-left">
             <h2 class="intro-x font-bold text-2xl xl:text-3xl text-center xl:text-left">Detalles del cliente</h2>
             </div>
-            <div class="pull-right">
+            <hr>
+            <div class="pull-right"><br>
                 <a class="btn btn-primary" href="{{ route('clientes.index') }}"> atras</a>
-            </div>
+            </div><br>
         </div>
     </div>
 

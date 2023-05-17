@@ -42,9 +42,6 @@ class ClientesController extends Controller
             'telefono' => 'required',
             'celular' => 'required',
             'email' => 'required',
-            'nvisitas' => 'required',
-            'puntosAcumulados' => 'required',
-            'ultimaVisita' => 'required',
             'fechaNacimiento' => 'required',
         ]);
 
@@ -76,16 +73,11 @@ class ClientesController extends Controller
     public function update(Request $request, Cliente $cliente): RedirectResponse
     {
         $request->validate([
-            'codigoCliente' => 'required',
             'nombre' => 'required',
             'direccion' => 'required',
-            'sexo' => 'required',
             'telefono' => 'required',
             'celular' => 'required',
             'email' => 'required',
-            'nvisitas' => 'required',
-            'puntosAcumulados' => 'required',
-            'ultimaVisita' => 'required',
             'fechaNacimiento' => 'required',
         ]);
 
