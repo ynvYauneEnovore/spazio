@@ -54,8 +54,6 @@
  <form class="validate-form">
      <div class="input-form"> <label for="validation-form-1" class="form-label w-full flex flex-col sm:flex-row"> Nombre <span class="sm:ml-auto mt-1 sm:mt-0 text-xs text-slate-500">Nombre del cliente</span> </label> <input id="validation-form-1" type="text" name="name" class="form-control" placeholder="Yovan Yaune" minlength="2"> </div>
      <div class="input-form"> <label for="validation-form-1" class="form-label w-full flex flex-col sm:flex-row"> Id <span class="sm:ml-auto mt-1 sm:mt-0 text-xs text-slate-500">Id del cliente</span> </label> <input id="validation-form-1" type="number" name="name" class="form-control" placeholder="00012154" minlength="2" required> </div>
-     <div class="input-form mt-3"> <label for="validation-form-2" class="form-label w-full flex flex-col sm:flex-row"> Fecha <span class="sm:ml-auto mt-1 sm:mt-0 text-xs text-slate-500">Requerido, día de entrada</span> </label> <input id="validation-form-2" type="date" name="email" class="form-control" required> </div>
-     <div class="input-form mt-3"> <label for="validation-form-2" class="form-label w-full flex flex-col sm:flex-row"> Hora <span class="sm:ml-auto mt-1 sm:mt-0 text-xs text-slate-500">Requerido, hora de entrada</span> </label> <input id="validation-form-2" type="time" name="email" class="form-control" required> </div>
      <button type="submit" class="btn btn-primary mt-5">Register</button>
      <button type="button" data-tw-dismiss="modal" class="btn btn-primary w-24">Cerrar</button>
  </form> <!-- END: Validation Form -->
@@ -91,8 +89,6 @@
  <form class="validate-form">
      <div class="input-form"> <label for="validation-form-1" class="form-label w-full flex flex-col sm:flex-row"> Nombre <span class="sm:ml-auto mt-1 sm:mt-0 text-xs text-slate-500">Nombre del cliente</span> </label> <input id="validation-form-1" type="text" name="name" class="form-control" placeholder="Yovan Yaune" minlength="2"> </div>
      <div class="input-form"> <label for="validation-form-1" class="form-label w-full flex flex-col sm:flex-row"> Id <span class="sm:ml-auto mt-1 sm:mt-0 text-xs text-slate-500">Id del cliente</span> </label> <input id="validation-form-1" type="number" name="name" class="form-control" placeholder="00012154" minlength="2" required> </div>
-     <div class="input-form mt-3"> <label for="validation-form-2" class="form-label w-full flex flex-col sm:flex-row"> Fecha <span class="sm:ml-auto mt-1 sm:mt-0 text-xs text-slate-500">Requerido, día de entrada</span> </label> <input id="validation-form-2" type="date" name="email" class="form-control" required> </div>
-     <div class="input-form mt-3"> <label for="validation-form-2" class="form-label w-full flex flex-col sm:flex-row"> Hora <span class="sm:ml-auto mt-1 sm:mt-0 text-xs text-slate-500">Requerido, hora de entrada</span> </label> <input id="validation-form-2" type="time" name="email" class="form-control" required> </div>
      <button type="submit" class="btn btn-primary mt-5">Register</button>
      <button type="button" data-tw-dismiss="modal" class="btn btn-primary w-24">Cerrar</button>
  </form> <!-- END: Validation Form -->

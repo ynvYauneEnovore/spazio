@@ -41,9 +41,19 @@ class SideMenu
                             'title' => 'Productos'
                         ],
 
+                        'verClientes' => [
+                            'icon' => 'shopping-bag',
+                            'route_name' => 'verClientes',
+                            'params' => [
+                                'layout' => 'side-menu',
+                            ],
+                            'title' => 'list'
+                        ],
+
 
 
             'devider',
+
 
             'clientes' => [
                 'icon' => 'user-check',

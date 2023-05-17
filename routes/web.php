@@ -5,6 +5,8 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\DarkModeController;
 use App\Http\Controllers\ColorSchemeController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ClientesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,18 +20,19 @@ use App\Http\Controllers\ColorSchemeController;
 */
 
 Route::get('dark-mode-switcher', [DarkModeController::class, 'switch'])->name('dark-mode-switcher');
-Route::get('color-scheme-switcher/{color_scheme}', [ColorSchemeController::class, 'switch'])->name('color-scheme-switcher');
 
 Route::controller(AuthController::class)->middleware('loggedin')->group(function() {
     Route::get('login', 'loginView')->name('login.index');
     Route::post('login', 'login')->name('login.check');
-    Route::get('register', 'registerView')->name('register.index');
-    Route::post('register', 'register')->name('register.store');
 });
 
 Route::middleware('auth')->group(function() {
     Route::get('logout', [AuthController::class, 'logout'])->name('logout');
     Route::controller(PageController::class)->group(function() {
+
+        //rutas de los crud
+        Route::resource('products', ProductController::class);
+        Route::resource('clientes', ClientesController::class);
 
 
         Route::get('/', 'inicioAdmin')->name('inicioAdmin');
@@ -71,3 +74,5 @@ Route::middleware('auth')->group(function() {
 
     });
 });
+
+

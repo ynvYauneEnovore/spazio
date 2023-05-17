@@ -25,6 +25,11 @@
   <i data-loading-icon="hearts" data-color="white" class="w-4 h-4 ml-2"></i>
 </a>
 
+<a href="{{ route('clientes.index') }}" class="btn btn-dark mr-1 mb-2 text-white">
+  CRUD-CLIENTE
+  <i data-loading-icon="hearts" data-color="white" class="w-4 h-4 ml-2"></i>
+</a>
+
 <a href="{{ route('productosAdmin') }}" class="btn btn-dark mr-1 mb-2 text-white">
   PRODUCTO
   <i data-loading-icon="circles" data-color="white" class="w-4 h-4 ml-2"></i>
