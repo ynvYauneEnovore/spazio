@@ -25,7 +25,7 @@ class ProductosFactory extends Factory
             'Nombre' => $this->faker->word,
             'Precio' => '3.50',
             'Descripcion' => $this->faker->sentence,
-            'Estado' => $this->faker->numberBetween(0, 10),
+            'Estado' => $this->faker->numberBetween(0, 1),
             'imagen' => 'img',
             'min' => $this->faker->randomNumber(3),
             'max' => $this->faker->randomNumber(5),

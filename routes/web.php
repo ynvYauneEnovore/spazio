@@ -55,8 +55,6 @@ Route::middleware('auth')->group(function() {
         ]);
 
 
-
-
         Route::get('/', 'inicioAdmin')->name('inicioAdmin');
 
         Route::get('asistenciasAdmin', 'asistenciasAdmin')->name('asistenciasAdmin');

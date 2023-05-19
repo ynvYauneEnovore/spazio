@@ -15,10 +15,10 @@ class ProductosController extends Controller
      */
     public function index(): View
     {
-        $productos = Productos::latest()->paginate(5);
+        $productos = Productos::latest()->paginate(10);
 
         return view('pages.productos.index', compact('productos'))
-            ->with('i', (request()->input('page', 1) - 1) * 5);
+            ->with('i', (request()->input('page', 1) - 1) * 10);
     }
 
     /**
@@ -119,4 +119,7 @@ class ProductosController extends Controller
         return redirect()->route('productos.index')
             ->with('success', 'Producto eliminado exitosamente');
     }
+
 }
+
+

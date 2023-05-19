@@ -22,7 +22,7 @@ class UserSeeder extends Seeder
         \App\Models\User::insert([
             [
                 'name' => 'Left4code',
-                'email' => 'admin@agymsa.bo',
+                'email' => 'admin@aspacio.bo',
                 'email_verified_at' => now(),
                 'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
                 'gender' => 'male',
@@ -37,14 +37,14 @@ class UserSeeder extends Seeder
         \App\Models\Cliente::insert([
             [
                 'codigoCliente' => '21321',
-                'nombre' => 'ynvols',
+                'nombre' => 'Yovan Ramón Yaune Enovore',
                 'imagenPerfil' => 'img',
                 'direccion' => 'Olñaeta Final',
                 'sexo' => 'masculino',
                 'telefono' => '+59173467157',
                 'celular' => '+59165659',
                 'email' => 'usuarios99@agymsa.bo',
-                'nvisitas' => '5',
+                'nvisitas' => '665',
                 'puntosAcumulados' => '213',
                 'ultimaVisita' => '2023-10-05',
                 'fechaNacimiento' => '1999-12-04',
@@ -57,10 +57,10 @@ class UserSeeder extends Seeder
 
         \App\Models\Productos::insert([
             [
-                       'Nombre' => 'Agua',
+                       'Nombre' => 'Guantes de pesas',
                        'Precio' => '3.50',
-                       'Descripcion' => 'Botella de agua mediana',
-                       'Estado' => '10',
+                       'Descripcion' => 'Guantes de 3 tamaños para distintos gustos.',
+                       'Estado' => '0',
                        'imagen' => 'img',
                        'min' => '200',
                        'max' => '20000',
