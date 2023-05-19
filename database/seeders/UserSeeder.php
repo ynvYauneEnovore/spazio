@@ -38,6 +38,7 @@ class UserSeeder extends Seeder
             [
                 'codigoCliente' => '21321',
                 'nombre' => 'ynvols',
+                'imagenPerfil' => 'img',
                 'direccion' => 'Olñaeta Final',
                 'sexo' => 'masculino',
                 'telefono' => '+59173467157',
@@ -68,6 +69,6 @@ class UserSeeder extends Seeder
                ]);
 
                // Fake Productos
-               Productos::factory()->times(80)->create();
+               Productos::factory()->times(60)->create();
     }
 }

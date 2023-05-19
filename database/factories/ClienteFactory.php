@@ -20,6 +20,7 @@ class ClienteFactory extends Factory
             'nit' => $this->faker->numerify('#########'),
             'codigoCliente' => $this->faker->unique()->randomNumber(5),
             'nombre' => $this->faker->name,
+            'imagenPerfil' => 'img',
             'direccion' => $this->faker->address,
             'sexo' => $this->faker->randomElement(['male', 'female']),
             'telefono' => $this->faker->phoneNumber,

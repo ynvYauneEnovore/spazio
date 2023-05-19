@@ -17,7 +17,7 @@ class ProductosController extends Controller
     {
         $productos = Productos::latest()->paginate(5);
 
-        return view('productos.index', compact('productos'))
+        return view('pages.productos.index', compact('productos'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
@@ -26,7 +26,7 @@ class ProductosController extends Controller
      */
     public function create(): View
     {
-        return view('productos.create');
+        return view('pages.productos.create');
     }
 
     /**
@@ -68,7 +68,7 @@ class ProductosController extends Controller
      */
     public function show(Productos $producto): View
     {
-        return view('productos.show', compact('producto'));
+        return view('pages.productos.show', compact('producto'));
     }
 
     /**
@@ -76,7 +76,7 @@ class ProductosController extends Controller
      */
     public function edit(Productos $producto): View
     {
-        return view('productos.edit', compact('producto'));
+        return view('pages.productos.edit', compact('producto'));
     }
 
     /**

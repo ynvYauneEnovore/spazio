@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('nit', 45)->nullable();
             $table->string('codigoCliente', 20);
             $table->string('nombre', 445)->nullable();
+            $table->string('imagenPerfil', 255)->nullable();
             $table->string('direccion', 245)->nullable();
             $table->string('sexo', 45)->nullable();
             $table->string('telefono', 245)->nullable();

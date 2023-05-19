@@ -198,7 +198,8 @@ class PageController extends Controller
      */
     public function crearProducto()
     {
-        return view('pages/productos/crear');
+
+        return view('pages/productos/index');
     }
 
                     /**
@@ -273,5 +274,7 @@ class PageController extends Controller
     {
         return view('pages/soporte/documentacion');
     }
+
+
 
 }
