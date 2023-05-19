@@ -34,9 +34,26 @@ Route::middleware('auth')->group(function() {
         //rutas de los crud
         Route::resource('products', ProductController::class);
 
-        Route::resource('clientes', ClientesController::class);
+        Route::resource('clientes', ClientesController::class)->names([
+            'index' => 'clientes.index',
+            'create' => 'clientes.create',
+            'store' => 'clientes.store',
+            'show' => 'clientes.show',
+            'edit' => 'clientes.edit',
+            'update' => 'clientes.update',
+            'destroy' => 'clientes.destroy',
+        ]);
 
-        Route::resource('productos', ProductosController::class);
+        Route::resource('productos', ProductosController::class)->names([
+            'index' => 'productos.index',
+            'create' => 'productos.create',
+            'store' => 'productos.store',
+            'show' => 'productos.show',
+            'edit' => 'productos.edit',
+            'update' => 'productos.update',
+            'destroy' => 'productos.destroy',
+        ]);
+
 
 
 

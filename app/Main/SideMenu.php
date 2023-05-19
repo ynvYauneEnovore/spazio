@@ -46,23 +46,23 @@ class SideMenu
 
             'productos' => [
                 'icon' => 'shopping-cart',
-                'title' => 'Productos',
+                'title' => 'Registros',
                 'sub_menu' => [
-                    'crearProducto' => [
+                    'clientes.index' => [
                         'icon' => 'edit',
-                        'route_name' => 'crearProducto',
+                        'route_name' => 'clientes.index',
                         'params' => [
                             'layout' => 'side-menu',
                         ],
-                        'title' => 'Crear'
+                        'title' => 'Usarios'
                     ],
-                    'verProducto' => [
+                    'productos.index' => [
                         'icon' => 'list',
-                        'route_name' => 'verProducto',
+                        'route_name' => 'productos.index',
                         'params' => [
                             'layout' => 'side-menu',
                         ],
-                        'title' => 'Ver'
+                        'title' => 'Productos'
                     ],
                     'editarProducto' => [
                         'icon' => 'edit',
@@ -70,7 +70,7 @@ class SideMenu
                         'params' => [
                             'layout' => 'side-menu',
                         ],
-                        'title' => 'Editar'
+                        'title' => 'Clases'
                     ],
                 ]
             ],
