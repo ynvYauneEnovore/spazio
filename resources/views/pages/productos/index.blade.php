@@ -43,14 +43,12 @@
                 <tbody>
                     @foreach ($productos as $producto)
                         <tr class="intro-x">
-                            <td class="w-40">
+                            <td class="w-60">
                                 <div class="flex">
-                                    <div class="w-6 h-6 zoom-in">
-                                        @if ($producto->imagen)
-                                            <img src="{{ asset('imagenes/' . $producto->imagen) }}" alt="Imagen del producto" width="50">
-                                        @else
-                                            Sin imagen
-                                        @endif
+                                    <div class="w-30 h-30 zoom-in">
+
+                                            <img src="{{ asset('imagenes/' . $producto->imagen) }}" alt="" width="100">
+
                                     </div>
                                 </div>
                             </td>

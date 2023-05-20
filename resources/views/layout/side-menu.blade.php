@@ -22,7 +22,7 @@
                         <li class="side-nav__devider my-6"></li>
                     @else
                         <li>
-                            <a href="{{ isset($menu['route_name']) ? route($menu['route_name'], $menu['params']) : 'javascript:;' }}" class="{{ $first_level_active_index == $menuKey ? 'side-menu side-menu--active' : 'side-menu' }}">
+                            <a href="{{ isset($menu['route_name']) ? route($menu['route_name'], $menu['params']) : 'ynv:' }}" class="{{ $first_level_active_index == $menuKey ? 'side-menu side-menu--active' : 'side-menu' }}">
                                 <div class="side-menu__icon">
                                     <i data-lucide="{{ $menu['icon'] }}"></i>
                                 </div>

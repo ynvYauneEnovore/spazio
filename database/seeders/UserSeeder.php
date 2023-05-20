@@ -69,6 +69,6 @@ class UserSeeder extends Seeder
                ]);
 
                // Fake Productos
-               Productos::factory()->times(60)->create();
+               Productos::factory()->times(20)->create();
     }
 }
