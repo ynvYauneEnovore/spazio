@@ -18,7 +18,7 @@ class TopMenu
                 'title' => 'Asistencia',
                 'sub_menu' => [
                     'dashboard-overview-1' => [
-                        'icon' => '',
+                        'icon' => 'home',
                         'route_name' => 'dashboard-overview-1',
                         'params' => [
                             'layout' => 'top-menu',

@@ -152,8 +152,8 @@ class SideMenu
                 ]
             ],
 
+
+
         ];
-
-
     }
 }

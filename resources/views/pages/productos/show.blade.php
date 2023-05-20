@@ -14,7 +14,8 @@
             <div class="flex flex-1 px-5 items-center justify-center lg:justify-start">
 
                 <div class="w-20 h-20 sm:w-24 sm:h-24 flex-none lg:w-32 lg:h-32 image-fit relative">
-                    <img alt="Midone - HTML Admin Template" class="rounded-full" src="{{ asset('imagenes/' . $producto->imagen) }}">
+
+                    <img alt="Midone - HTML Admin Template" class="rounded-full" src="{{ asset('imagenes/' . $producto->imagen) }}" data-action="zoom" class="w-full rounded-md">
 
                 </div>
                 <div class="ml-5">

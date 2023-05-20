@@ -19,14 +19,13 @@
                 {!! $productos->links() !!}
             </div>
             <div class="w-full sm:w-auto mt-3 sm:mt-0 sm:ml-auto md:ml-0">
-    <form action="" method="GET">
-        <div class="w-56 relative text-slate-500">
-            <input type="text" class="form-control w-56 box pr-10" name="busqueda" placeholder="Buscar...">
-            <button type="submit" class="w-4 h-4 absolute my-auto inset-y-0 right-0 mr-3" data-lucide="search"></button>
-        </div>
-    </form>
-</div>
-
+                <form action="" method="GET">
+                    <div class="w-56 relative text-slate-500">
+                        <input type="text" class="form-control w-56 box pr-10" name="busqueda" placeholder="Buscar...">
+                        <button type="submit" class="w-4 h-4 absolute my-auto inset-y-0 right-0 mr-3" data-lucide="search"></button>
+                    </div>
+                </form>
+            </div>
         </div>
         <!-- BEGIN: Data List -->
         <div class="intro-y col-span-12 overflow-auto lg:overflow-visible">
@@ -46,9 +45,7 @@
                             <td class="w-60">
                                 <div class="flex">
                                     <div class="w-30 h-30 zoom-in">
-
-                                            <img src="{{ asset('imagenes/' . $producto->imagen) }}" alt="" width="100">
-
+                                        <img src="{{ asset('imagenes/' . $producto->imagen) }}" alt="" width="100">
                                     </div>
                                 </div>
                             </td>
@@ -65,7 +62,6 @@
                                     @endif
                                 </div>
                             </td>
-
                             <td class="table-report__action w-56">
                                 <div class="flex justify-center items-center">
                                     <a class="flex items-center mr-3 text-primary" href="{{ route('productos.show', $producto->id) }}">
@@ -91,12 +87,11 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-body p-0">
-                <div class="p-5 text-center">
-    <i data-lucide="x-circle" class="w-16 h-16 text-danger mx-auto mt-3"></i>
-    <div class="text-3xl mt-5">¿Estás seguro?</div>
-    <div class="text-slate-500 mt-2">¿Realmente deseas eliminar este registro?<br>Este proceso no se puede deshacer.</div>
-</div>
-
+                    <div class="p-5 text-center">
+                        <i data-lucide="x-circle" class="w-16 h-16 text-danger mx-auto mt-3"></i>
+                        <div class="text-3xl mt-5">¿Estás seguro?</div>
+                        <div class="text-slate-500 mt-2">¿Realmente deseas eliminar este registro?<br>Este proceso no se puede deshacer.</div>
+                    </div>
                     <div class="px-5 pb-8 text-center">
                         <form action="{{ route('productos.destroy', $producto->id) }}" method="POST">
                             <button type="button" data-tw-dismiss="modal" class="btn btn-outline-secondary w-24 mr-1">Cancelar</button>

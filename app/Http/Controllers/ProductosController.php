@@ -106,7 +106,7 @@ class ProductosController extends Controller
         $producto->save();
 
         return redirect()->route('productos.index')
-            ->with('success', 'Producto actualizado exitosamente');
+            ->with('primary', 'Producto actualizado exitosamente');
     }
 
     /**
