@@ -37,14 +37,14 @@ class ClasesController extends Controller
             'nombre' => 'required',
             'sigla' => 'required',
             'precio_1' => 'required',
-            'precio_2' => 'required',
-            'precio_3' => 'required',
+            'precio_2' => 'nullable',
+            'precio_3' => 'nullable',
             'Horainicio' => 'nullable',
             'horafin' => 'nullable',
             'estado' => 'nullable',
         ]);
 
-        Clase::create($request->all());
+        Clases::create($request->all());
 
         return redirect()->route('clases.index')
             ->with('success', 'Clase creada exitosamente.');
@@ -53,7 +53,7 @@ class ClasesController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Clase $clase): View
+    public function show(Clases $clase): View
     {
         return view('pages.clases.show', compact('clase'));
     }
@@ -61,7 +61,7 @@ class ClasesController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Clase $clase): View
+    public function edit(Clases $clase): View
     {
         return view('pages.clases.edit', compact('clase'));
     }
@@ -69,14 +69,14 @@ class ClasesController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Clase $clase): RedirectResponse
+    public function update(Request $request, Clases $clase): RedirectResponse
     {
         $request->validate([
             'nombre' => 'required',
             'sigla' => 'required',
             'precio_1' => 'required',
-            'precio_2' => 'required',
-            'precio_3' => 'required',
+            'precio_2' => 'nullable',
+            'precio_3' => 'nullable',
             'Horainicio' => 'nullable',
             'horafin' => 'nullable',
             'estado' => 'nullable',

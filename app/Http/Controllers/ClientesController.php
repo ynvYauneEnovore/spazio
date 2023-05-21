@@ -83,7 +83,7 @@ class ClientesController extends Controller
 
         $cliente->update($request->all());
 
-        return redirect()->route('pages.clientes.index')
+        return redirect()->route('clientes.index')
             ->with('success', 'Cliente actualizado exitosamente.');
     }
 

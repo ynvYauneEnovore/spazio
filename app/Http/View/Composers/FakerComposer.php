@@ -91,8 +91,8 @@ class FakerComposer
     public function fakeImages()
     {
         $photos = [];
-        for ($i = 0; $i < 15; $i++) {
-            $photos[] = 'preview-' . rand(1, 15) . '.jpg';
+        for ($i = 0; $i < 14; $i++) {
+            $photos[] = 'clases-' . rand(1, 15) . '.jpeg';
         }
         return collect($photos)->random(10);
     }
@@ -151,17 +151,18 @@ class FakerComposer
     public function fakeProducts()
     {
         $products = collect([
-            [ 'name' => 'Dell XPS 13', 'category' => 'PC & Laptop' ],
-            [ 'name' => 'Apple MacBook Pro 13', 'category' => 'PC & Laptop' ],
-            [ 'name' => 'Oppo Find X2 Pro', 'category' => 'Smartphone & Tablet' ],
-            [ 'name' => 'Samsung Galaxy S20 Ultra', 'category' => 'Smartphone & Tablet' ],
-            [ 'name' => 'Sony Master Series A9G', 'category' => 'Electronic' ],
-            [ 'name' => 'Samsung Q90 QLED TV', 'category' => 'Electronic' ],
-            [ 'name' => 'Nike Air Max 270', 'category' => 'Sport & Outdoor' ],
-            [ 'name' => 'Nike Tanjun', 'category' => 'Sport & Outdoor' ],
-            [ 'name' => 'Nikon Z6', 'category' => 'Photography' ],
-            [ 'name' => 'Sony A7 III', 'category' => 'Photography' ]
+            [ 'name' => 'Sauna Individual', 'category' => 'Saunas' ],
+            [ 'name' => 'Sauna Familiar', 'category' => 'Saunas' ],
+            [ 'name' => 'Sauna de Vapor', 'category' => 'Saunas' ],
+            [ 'name' => 'Máquina de Pesas', 'category' => 'Gimnasios' ],
+            [ 'name' => 'Cinta de Correr', 'category' => 'Gimnasios' ],
+            [ 'name' => 'Bicicleta Estática', 'category' => 'Gimnasios' ],
+            [ 'name' => 'Pelota de Ejercicio', 'category' => 'Gimnasios' ],
+            [ 'name' => 'Reloj Inteligente', 'category' => 'Accesorios' ],
+            [ 'name' => 'Toalla Deportiva', 'category' => 'Accesorios' ],
+            [ 'name' => 'Botella de Agua', 'category' => 'Accesorios' ]
         ]);
+
 
         return $products->shuffle();
     }
@@ -170,50 +171,32 @@ class FakerComposer
     {
         $news = collect([
             [
-                'title' => 'Desktop publishing software like Aldus PageMaker',
-                'super_short_content' => substr('Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', 0, 30),
-                'short_content' => substr('Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', 0, 150),
-                'content' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+                'title' => 'Clases de ejercicio en el gimnasio',
+                'super_short_content' => substr('Mantenerse activo y hacer ejercicio regularmente es esencial para mantener una buena salud física y mental. El gimnasio ofrece una amplia gama de opciones de entrenamiento, desde levantamiento de pesas y cardio hasta clases grupales y entrenamientos personalizados.', 0, 30),
+                'short_content' => substr('Mantenerse activo y hacer ejercicio regularmente es esencial para mantener una buena salud física y mental. El gimnasio ofrece una amplia gama de opciones de entrenamiento, desde levantamiento de pesas y cardio hasta clases grupales y entrenamientos personalizados. Además, podrás relajarte y rejuvenecer en nuestra sauna y disfrutar de otros servicios como masajes y terapias de relajación.', 0, 150),
+                'content' => 'Mantenerse activo y hacer ejercicio regularmente es esencial para mantener una buena salud física y mental. El gimnasio ofrece una amplia gama de opciones de entrenamiento, desde levantamiento de pesas y cardio hasta clases grupales y entrenamientos personalizados. Además, podrás relajarte y rejuvenecer en nuestra sauna y disfrutar de otros servicios como masajes y terapias de relajación. Nuestro objetivo es brindarte un espacio donde puedas alcanzar tus metas de fitness, mejorar tu bienestar general y disfrutar de un ambiente acogedor y motivador.'
             ],
             [
-                'title' => 'Dummy text of the printing and typesetting industry',
-                'super_short_content' => substr('It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for \'lorem ipsum\' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).', 0, 30),
-                'short_content' => substr('It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for \'lorem ipsum\' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).', 0, 150),
-                'content' => 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for \'lorem ipsum\' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).'
+                'title' => 'Sauna para tu salud',
+                'super_short_content' => substr('La sauna no solo es una experiencia relajante, sino que también ofrece beneficios para tu salud. Ayuda a eliminar toxinas del cuerpo, mejora la circulación sanguínea, alivia el estrés y promueve la relajación muscular. Además, pasar tiempo en la sauna puede contribuir a la pérdida de peso y mejorar la salud de la piel.', 0, 30),
+                'short_content' => substr('La sauna no solo es una experiencia relajante, sino que también ofrece beneficios para tu salud. Ayuda a eliminar toxinas del cuerpo, mejora la circulación sanguínea, alivia el estrés y promueve la relajación muscular. Además, pasar tiempo en la sauna puede contribuir a la pérdida de peso y mejorar la salud de la piel. En nuestro gimnasio, ofrecemos una sauna moderna y confortable donde puedes disfrutar de todos estos beneficios y experimentar una sensación de bienestar total.', 0, 150),
+                'content' => 'La sauna no solo es una experiencia relajante, sino que también ofrece beneficios para tu salud. Ayuda a eliminar toxinas del cuerpo, mejora la circulación sanguínea, alivia el estrés y promueve la relajación muscular. Además, pasar tiempo en la sauna puede contribuir a la pérdida de peso y mejorar la salud de la piel. En nuestro gimnasio, ofrecemos una sauna moderna y confortable donde puedes disfrutar de todos estos beneficios y experimentar una sensación de bienestar total. Nuestro equipo profesional está disponible para brindarte asesoramiento y recomendaciones sobre cómo aprovechar al máximo tu experiencia en la sauna.'
             ],
             [
-                'title' => 'Popularised in the 1960s with the release of Letraset',
-                'super_short_content' => substr('Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.', 0, 30),
-                'short_content' => substr('Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.', 0, 150),
-                'content' => 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.'
+                'title' => 'Clases grupales y entrenamientos',
+                'super_short_content' => substr('En nuestro gimnasio, te ofrecemos una variedad de clases grupales y entrenamientos personalizados para ayudarte a alcanzar tus objetivos de fitness de manera efectiva y divertida. Nuestros instructores altamente capacitados te guiarán a través de rutinas de ejercicios dinámicas y motivadoras, adaptadas a tus necesidades y preferencias.', 0, 30),
+                'short_content' => substr('En nuestro gimnasio, te ofrecemos una variedad de clases grupales y entrenamientos personalizados para ayudarte a alcanzar tus objetivos de fitness de manera efectiva y divertida. Nuestros instructores altamente capacitados te guiarán a través de rutinas de ejercicios dinámicas y motivadoras, adaptadas a tus necesidades y preferencias. Ya sea que estés interesado en clases de baile, yoga, pilates o entrenamiento de fuerza, tenemos algo para todos. Además, también ofrecemos servicios de entrenamiento personalizado, donde nuestros entrenadores diseñarán un programa específico para ti, brindándote el apoyo y la motivación necesarios para alcanzar tus metas.', 0, 150),
+                'content' => 'En nuestro gimnasio, te ofrecemos una variedad de clases grupales y entrenamientos personalizados para ayudarte a alcanzar tus objetivos de fitness de manera efectiva y divertida. Nuestros instructores altamente capacitados te guiarán a través de rutinas de ejercicios dinámicas y motivadoras, adaptadas a tus necesidades y preferencias. Ya sea que estés interesado en clases de baile, yoga, pilates o entrenamiento de fuerza, tenemos algo para todos. Además, también ofrecemos servicios de entrenamiento personalizado, donde nuestros entrenadores diseñarán un programa específico para ti, brindándote el apoyo y la motivación necesarios para alcanzar tus metas. En nuestro gimnasio, nos esforzamos por crear un ambiente inclusivo y amigable, donde todos se sientan bienvenidos y motivados para alcanzar su máximo potencial.'
             ],
             [
-                'title' => '200 Latin words, combined with a handful of model sentences',
-                'super_short_content' => substr('There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn\'t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.', 0, 50),
-                'short_content' => substr('There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn\'t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.', 0, 150),
-                'content' => 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn\'t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.'
-            ]
+                'title' => 'Servicios para tu bienestar',
+                'super_short_content' => substr('Además de nuestro gimnasio y sauna, ofrecemos una variedad de servicios adicionales para mejorar tu bienestar. Nuestro equipo de masajistas profesionales te brindará tratamientos relajantes y terapias de recuperación muscular. También contamos con especialistas en nutrición que pueden ayudarte a desarrollar una dieta saludable y equilibrada. Estamos comprometidos con tu bienestar integral y nos aseguramos de ofrecerte los servicios necesarios para que te sientas bien contigo mismo.', 0, 50),
+                'short_content' => substr('Además de nuestro gimnasio y sauna, ofrecemos una variedad de servicios adicionales para mejorar tu bienestar. Nuestro equipo de masajistas profesionales te brindará tratamientos relajantes y terapias de recuperación muscular. También contamos con especialistas en nutrición que pueden ayudarte a desarrollar una dieta saludable y equilibrada. Estamos comprometidos con tu bienestar integral y nos aseguramos de ofrecerte los servicios necesarios para que te sientas bien contigo mismo. Ven y descubre cómo nuestro gimnasio puede ayudarte a alcanzar un estilo de vida saludable y equilibrado.', 0, 150),
+                'content' => 'Además de nuestro gimnasio y sauna, ofrecemos una variedad de servicios adicionales para mejorar tu bienestar. Nuestro equipo de masajistas profesionales te brindará tratamientos relajantes y terapias de recuperación muscular. También contamos con especialistas en nutrición que pueden ayudarte a desarrollar una dieta saludable y equilibrada. Estamos comprometidos con tu bienestar integral y nos aseguramos de ofrecerte los servicios necesarios para que te sientas bien contigo mismo. Ven y descubre cómo nuestro gimnasio puede ayudarte a alcanzar un estilo de vida saludable y equilibrado. Nuestro objetivo es brindarte un lugar donde puedas cuidar tu cuerpo y mente, y encontrar el equilibrio perfecto entre el ejercicio físico, la relajación y la alimentación adecuada.'
+            ],
         ]);
 
         return $news->shuffle();
-    }
-
-    public function fakeFiles()
-    {
-        $files = collect([
-            [ 'file_name' => 'Celine Dion - Ashes.mp4', 'type' => 'MP4', 'size' => '20 MB' ],
-            [ 'file_name' => 'Laravel 7', 'type' => 'Empty Folder', 'size' => '120 MB' ],
-            [ 'file_name' => $this->fakeImages()->first(), 'type' => 'Image', 'size' => '1.2 MB' ],
-            [ 'file_name' => 'Repository', 'type' => 'Folder', 'size' => '20 KB' ],
-            [ 'file_name' => 'Resources.txt', 'type' => 'TXT', 'size' => '2.2 MB' ],
-            [ 'file_name' => 'Routes.php', 'type' => 'PHP', 'size' => '1 KB' ],
-            [ 'file_name' => 'Dota 2', 'type' => 'Folder', 'size' => '112 GB' ],
-            [ 'file_name' => 'Documentation', 'type' => 'Empty Folder', 'size' => '4 MB' ],
-            [ 'file_name' => $this->fakeImages()->first(), 'type' => 'Image', 'size' => '1.4 MB' ],
-            [ 'file_name' => $this->fakeImages()->first(), 'type' => 'Image', 'size' => '1 MB' ]
-        ]);
-
-        return $files->shuffle();
     }
 
     public function fakeJobs()
@@ -279,7 +262,6 @@ class FakerComposer
                 'stocks' => $this->fakeStocks(),
                 'products' => $this->fakeProducts(),
                 'news' => $this->fakeNews(),
-                'files' => $this->fakeFiles(),
                 'jobs' => $this->fakeJobs(),
                 'notification_count' => $this->fakeNotificationCount(),
                 'foods' => $this->fakeFoods()
