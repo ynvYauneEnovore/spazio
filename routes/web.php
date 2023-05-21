@@ -8,6 +8,7 @@ use App\Http\Controllers\ColorSchemeController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ClientesController;
 use App\Http\Controllers\ProductosController;
+use App\Http\Controllers\ClasesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -52,6 +53,16 @@ Route::middleware('auth')->group(function() {
             'edit' => 'productos.edit',
             'update' => 'productos.update',
             'destroy' => 'productos.destroy',
+        ]);
+
+        Route::resource('clases', ClasesController::class)->names([
+            'index' => 'clases.index',
+            'create' => 'clases.create',
+            'store' => 'clases.store',
+            'show' => 'clases.show',
+            'edit' => 'clases.edit',
+            'update' => 'clases.update',
+            'destroy' => 'clases.destroy',
         ]);
 
 

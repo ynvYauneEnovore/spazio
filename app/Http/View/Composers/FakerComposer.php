@@ -9,36 +9,21 @@ class FakerComposer
     public function fakeUsers()
     {
         $users = collect([
-            [ 'name' => 'Johnny Depp', 'gender' => 'male' ],
-            [ 'name' => 'Al Pacino', 'gender' => 'male' ],
-            [ 'name' => 'Robert De Niro', 'gender' => 'male' ],
-            [ 'name' => 'Kevin Spacey', 'gender' => 'male' ],
-            [ 'name' => 'Denzel Washington', 'gender' => 'male' ],
-            [ 'name' => 'Russell Crowe', 'gender' => 'male' ],
-            [ 'name' => 'Brad Pitt', 'gender' => 'male' ],
-            [ 'name' => 'Angelina Jolie', 'gender' => 'female' ],
-            [ 'name' => 'Leonardo DiCaprio', 'gender' => 'male' ],
-            [ 'name' => 'Tom Cruise', 'gender' => 'male' ],
-            [ 'name' => 'John Travolta', 'gender' => 'male' ],
-            [ 'name' => 'Arnold Schwarzenegger', 'gender' => 'male' ],
-            [ 'name' => 'Sylvester Stallone', 'gender' => 'male' ],
-            [ 'name' => 'Kate Winslet', 'gender' => 'female' ],
-            [ 'name' => 'Christian Bale', 'gender' => 'male' ],
-            [ 'name' => 'Morgan Freeman', 'gender' => 'male' ],
-            [ 'name' => 'Keanu Reeves', 'gender' => 'male' ],
-            [ 'name' => 'Nicolas Cage', 'gender' => 'male' ],
-            [ 'name' => 'Hugh Jackman', 'gender' => 'male' ],
-            [ 'name' => 'Edward Norton', 'gender' => 'male' ],
-            [ 'name' => 'Bruce Willis', 'gender' => 'male' ],
-            [ 'name' => 'Tom Hanks', 'gender' => 'male' ],
-            [ 'name' => 'Charlize Theron', 'gender' => 'female' ],
-            [ 'name' => 'Will Smith', 'gender' => 'male' ],
-            [ 'name' => 'Sean Connery', 'gender' => 'male' ],
-            [ 'name' => 'Keira Knightley', 'gender' => 'female' ],
-            [ 'name' => 'Vin Diesel', 'gender' => 'male' ],
-            [ 'name' => 'Matt Damon', 'gender' => 'male' ],
-            [ 'name' => 'Richard Gere', 'gender' => 'male' ],
-            [ 'name' => 'Catherine Zeta-Jones', 'gender' => 'female' ]
+            [ 'name' => 'Yovan Yaune Enovore', 'gender' => 'male' ],
+            [ 'name' => 'Yovan Yaune Enovore', 'gender' => 'male' ],
+            [ 'name' => 'Yovan Yaune Enovore', 'gender' => 'male' ],
+            [ 'name' => 'Yovan Yaune Enovore', 'gender' => 'male' ],
+            [ 'name' => 'Yovan Yaune Enovore', 'gender' => 'male' ],
+            [ 'name' => 'Yovan Yaune Enovore', 'gender' => 'male' ],
+            [ 'name' => 'Yovan Yaune Enovore', 'gender' => 'male' ],
+            [ 'name' => 'Yovan Yaune Enovore', 'gender' => 'male' ],
+            [ 'name' => 'Yovan Yaune Enovore', 'gender' => 'male' ],
+            [ 'name' => 'Yovan Yaune Enovore', 'gender' => 'male' ],
+            [ 'name' => 'Yovan Yaune Enovore', 'gender' => 'male' ],
+            [ 'name' => 'Yovan Yaune Enovore', 'gender' => 'male' ],
+            [ 'name' => 'Yovan Yaune Enovore', 'gender' => 'male' ],
+            [ 'name' => 'Yovan Yaune Enovore', 'gender' => 'male' ],
+            [ 'name' => 'Yovan Yaune Enovore', 'gender' => 'male' ],
         ]);
 
         return $users->random(3)->map(function ($user) {
@@ -234,7 +219,7 @@ class FakerComposer
     public function fakeJobs()
     {
         $jobs = collect([
-            'Frontend Engineer', 'Software Engineer', 'Backend Engineer', 'DevOps Engineer'
+            'Software Engineer', 'Software Engineer', 'Software Engineer', 'Software Engineer'
         ]);
 
         return $jobs->shuffle();

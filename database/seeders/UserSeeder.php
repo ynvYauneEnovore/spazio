@@ -52,7 +52,7 @@ class UserSeeder extends Seeder
         ]);
 
         // Fake users
-        Cliente::factory()->times(90)->create();
+        Cliente::factory()->times(30)->create();
 
 
         \App\Models\Productos::insert([
@@ -69,6 +69,6 @@ class UserSeeder extends Seeder
                ]);
 
                // Fake Productos
-               Productos::factory()->times(200)->create();
+               Productos::factory()->times(20)->create();
     }
 }

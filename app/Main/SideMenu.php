@@ -64,9 +64,9 @@ class SideMenu
                         ],
                         'title' => 'Productos'
                     ],
-                    'editarProducto' => [
+                    'clases.index' => [
                         'icon' => 'edit',
-                        'route_name' => 'editarProducto',
+                        'route_name' => 'clases.index',
                         'params' => [
                             'layout' => 'side-menu',
                         ],
