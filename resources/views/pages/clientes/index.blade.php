@@ -28,9 +28,15 @@
         <div class="intro-y col-span-12 md:col-span-6">
                 <div class="box">
                     <div class="flex flex-col lg:flex-row items-center p-5 border-b border-slate-200/60 dark:border-darkmode-400">
-                        <div class="w-24 h-24 lg:w-12 lg:h-12 image-fit lg:mr-1">
-                            <img alt="Midone - HTML Admin Template" class="rounded-full" src=" {{ $cliente->imagenPerfil }}">
-                        </div>
+
+                    <div class="w-24 h-24 lg:w-32 lg:h-32 image-fit lg:mr-1">
+                        @if($cliente->imagenPerfil && file_exists(public_path('imagenes/' . $cliente->imagenPerfil)))
+                            <img class="rounded-full" src="{{ asset('imagenes/' . $cliente->imagenPerfil) }}">
+                        @else
+                            <img class="rounded-full" src="{{ asset('img/usuario.png') }}" width="50">
+                        @endif
+                    </div>
+
 
                         <div class="lg:ml-2 lg:mr-auto text-center lg:text-left mt-3 lg:mt-0">
                             NOMBRE: {{ $cliente->nombre }}<BR>
@@ -43,9 +49,13 @@
                             <a href="{{ route('clientes.edit', $cliente->id) }}" class="w-8 h-8 rounded-full flex items-center justify-center border dark:border-darkmode-400 ml-2 text-primary zoom-in tooltip" title="Editar datos">
                             <i data-lucide="check-square" class="w-6 h-6"></i>
                             </a>
-                            <a class="w-8 h-8 rounded-full flex items-center justify-center border dark:border-darkmode-400 ml-2 text-danger zoom-in tooltip" href="javascript:;" data-tw-toggle="modal" title="Eliminar" data-tw-target="#delete-confirmation-modal">
-                                <i data-lucide="trash-2" class="w-6 h-6"></i>
-                            </a>
+                            <form action="{{ route('clientes.destroy', $cliente->id) }}" method="POST">
+                            <button type="submit" class="btn btn-danger w-12">
+                            <i data-lucide="trash" class="w-6 h-6"></i>
+                            </button>
+                            @csrf
+                            @method('DELETE')
+                        </form>
                         </div>
                     </div>
                     <div class="flex flex-wrap lg:flex-nowrap items-center justify-center p-5">

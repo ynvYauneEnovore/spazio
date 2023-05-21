@@ -37,17 +37,31 @@ class ClientesController extends Controller
         $request->validate([
             'codigoCliente' => 'required',
             'nombre' => 'required',
-            'direccion' => 'required',
-            'sexo' => 'required',
-            'telefono' => 'required',
-            'celular' => 'required',
-            'email' => 'required',
-            'fechaNacimiento' => 'required',
+            'direccion' => 'nullable',
+            'imagenPerfil' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'sexo' => 'nullable',
+            'telefono' => 'nullable',
+            'celular' => 'nullable',
+            'email' => 'nullable',
+            'fechaNacimiento' => 'nullable',
         ]);
 
-        Cliente::create($request->all());
+        $imagenNombreS = time().'.'.$request->imagenPerfil->extension();
+        $request->imagenPerfil->move(public_path('imagenes'), $imagenNombreS);
 
-        return redirect()->route('pages.clientes.index')
+        Clientes::create([
+            'codigoCliente' => $request->codigoCliente,
+            'nombre' => $request->nombre,
+            'direccion' => $request->direccion,
+            'imagenPerfil' => $imagenNombreS,
+            'sexo' => $request->sexo,
+            'telefono' => $request->telefono,
+            'celular' => $request->celular,
+            'email' => $request->email,
+            'fechaNacimiento' => $request->fechaNacimiento,
+        ]);
+
+        return redirect()->route('clientes.index')
             ->with('success', 'Cliente creado exitosamente.');
     }
 

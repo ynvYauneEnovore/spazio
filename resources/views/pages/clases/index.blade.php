@@ -60,12 +60,15 @@
                                     <a class="flex items-center mr-3 text-primary" href="{{ route('clases.show', $clases->id) }}">
                                         <i data-lucide="check-square" class="w-4 h-4 mr-1 text-primary"></i> Ver
                                     </a>
-                                    <a class="flex items-center mr-3 text-primary" href="{{ route('clases.edit', $clases->id) }}">
+                                    <a class="flex items-center mr-3 text-primary" href="{{ route('clases.destroy', $clases->id) }}">
                                         <i data-lucide="check-square" class="w-4 h-4 mr-1 text-primary"></i> Editar
                                     </a>
-                                    <a class="flex items-center text-danger" href="javascript:;" data-tw-toggle="modal" data-tw-target="#delete-confirmation-modal">
-                                        <i data-lucide="trash-2" class="w-4 h-4 mr-1"></i> Eliminar
-                                    </a>
+
+                                    <form action="{{ route('clases.destroy', $clases->id) }}" method="POST">
+                            <button type="submit" class="btn btn-danger w-24">Eliminar</button>
+                            @csrf
+                            @method('DELETE')
+                        </form>
                                 </div>
                             </td>
                         </tr>
@@ -75,27 +78,4 @@
         </div>
         <!-- END: Data List -->
     </div>
-    <!-- BEGIN: Delete Confirmation Modal -->
-    <div id="delete-confirmation-modal" class="modal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body p-0">
-                    <div class="p-5 text-center">
-                        <i data-lucide="x-circle" class="w-16 h-16 text-danger mx-auto mt-3"></i>
-                        <div class="text-3xl mt-5">¿Estás seguro?</div>
-                        <div class="text-slate-500 mt-2">¿Realmente deseas eliminar este registro?<br>Este proceso no se puede deshacer.</div>
-                    </div>
-                    <div class="px-5 pb-8 text-center">
-                        <form action="{{ route('clases.destroy', $clases->id) }}" method="POST">
-                            <button type="button" data-tw-dismiss="modal" class="btn btn-outline-secondary w-24 mr-1">Cancelar</button>
-                            <button type="submit" class="btn btn-danger w-24">Eliminar</button>
-                            @csrf
-                            @method('DELETE')
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- END: Delete Confirmation Modal -->
 @endsection
