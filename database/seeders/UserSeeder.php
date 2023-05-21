@@ -22,7 +22,7 @@ class UserSeeder extends Seeder
         \App\Models\User::insert([
             [
                 'name' => 'Left4code',
-                'email' => 'admin@aspacio.bo',
+                'email' => 'admin@spazio.bo',
                 'email_verified_at' => now(),
                 'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
                 'gender' => 'male',
@@ -52,7 +52,7 @@ class UserSeeder extends Seeder
         ]);
 
         // Fake users
-        Cliente::factory()->times(10)->create();
+        Cliente::factory()->times(90)->create();
 
 
         \App\Models\Productos::insert([
@@ -69,6 +69,6 @@ class UserSeeder extends Seeder
                ]);
 
                // Fake Productos
-               Productos::factory()->times(20)->create();
+               Productos::factory()->times(200)->create();
     }
 }

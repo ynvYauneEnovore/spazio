@@ -15,9 +15,9 @@ class ClientesController extends Controller
      */
     public function index(): View
     {
-        $clientes = Cliente::latest()->paginate(5);
+        $clientes = Cliente::latest()->paginate(6);
 
-        return view('clientes.index', compact('clientes'))
+        return view('pages.clientes.index', compact('clientes'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
@@ -26,7 +26,7 @@ class ClientesController extends Controller
      */
     public function create(): View
     {
-        return view('clientes.create');
+        return view('pages.clientes.create');
     }
 
     /**
@@ -47,7 +47,7 @@ class ClientesController extends Controller
 
         Cliente::create($request->all());
 
-        return redirect()->route('clientes.index')
+        return redirect()->route('pages.clientes.index')
             ->with('success', 'Cliente creado exitosamente.');
     }
 
@@ -56,7 +56,7 @@ class ClientesController extends Controller
      */
     public function show(Cliente $cliente): View
     {
-        return view('clientes.show', compact('cliente'));
+        return view('pages.clientes.show', compact('cliente'));
     }
 
     /**
@@ -64,7 +64,7 @@ class ClientesController extends Controller
      */
     public function edit(Cliente $cliente): View
     {
-        return view('clientes.edit', compact('cliente'));
+        return view('pages.clientes.edit', compact('cliente'));
     }
 
     /**
@@ -83,7 +83,7 @@ class ClientesController extends Controller
 
         $cliente->update($request->all());
 
-        return redirect()->route('clientes.index')
+        return redirect()->route('pages.clientes.index')
             ->with('success', 'Cliente actualizado exitosamente.');
     }
 

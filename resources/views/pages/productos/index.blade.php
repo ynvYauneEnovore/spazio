@@ -16,7 +16,7 @@
         <div class="intro-y col-span-12 flex flex-wrap sm:flex-nowrap items-center mt-2">
             <a class="btn btn-primary shadow-md mr-2" href="{{ route('productos.create') }}">+ Agregar</a>
             <div class="hidden md:block mx-auto text-slate-500">
-                {!! $productos->links() !!}
+
             </div>
             <div class="w-full sm:w-auto mt-3 sm:mt-0 sm:ml-auto md:ml-0">
                 <form action="" method="GET">
@@ -27,6 +27,7 @@
                 </form>
             </div>
         </div>
+        {!! $productos->links() !!}
         <!-- BEGIN: Data List -->
         <div class="intro-y col-span-12 overflow-auto lg:overflow-visible">
             <table class="table table-report -mt-2">
@@ -35,8 +36,8 @@
                         <th class="whitespace-nowrap">PERFIL</th>
                         <th class="whitespace-nowrap">NOMBRE</th>
                         <th class="text-center whitespace-nowrap">STOCK</th>
-                        <th class="text-center whitespace-nowrap">STATUS</th>
-                        <th class="text-center whitespace-nowrap">ACTIONS</th>
+                        <th class="text-center whitespace-nowrap">ESTADO</th>
+                        <th class="text-center whitespace-nowrap">ACCIÓN</th>
                     </tr>
                 </thead>
                 <tbody>
