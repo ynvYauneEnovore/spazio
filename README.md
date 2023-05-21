@@ -1,4 +1,31 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Spazio - Aplicación de Administración
+
+Bienvenido/a a la aplicación de administración de la empresa Spazio. Esta aplicación te permite administrar usuarios, clientes, productos y servicios de la empresa.
+
+## Características
+
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="200"></a></p>
+
+- Gestión de usuarios: Registra nuevos usuarios y administra sus permisos de acceso.
+- Gestión de clientes: Agrega, edita y elimina información de clientes.
+- Gestión de productos: Administra el catálogo de productos de la empresa.
+- Gestión de servicios: Ofrece una variedad de servicios para los clientes.
+
+## Requisitos
+
+- PHP 7.0 o superior
+- Base de datos MySQL
+- Framework Laravel 8.0
+
+## Instalación
+
+1. Clona el repositorio en tu máquina local:
+
+```bash
+git clone https://github.com/tu-usuario/spazio-app.git
+
+
+
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
