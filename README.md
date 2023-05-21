@@ -20,31 +20,30 @@ Bienvenido/a a la aplicación de administración de la empresa Spazio. Esta apli
 ## Instalación
 
 1. Clona el repositorio en tu máquina local:
+
 `https://github.com/ynvYauneEnovore/spazio.git`
 
 2. Navega al directorio del proyecto:
-`Copy code
-cd spazio-app`
+
+`cd spazio`
 
 3. Instala las dependencias de PHP utilizando Composer:
-`Copy code
-composer install`
+`composer install`
 
 4. Copia el archivo de configuración de ejemplo y configura tus variables de entorno:
-`Copy code
-cp .env.example .env`
+`cp .env.example .env`
 
 5. Genera la clave de la aplicación:
-`Copy code
-php artisan key:generate`
+`php artisan key:generate`
 
 6. Configura tu base de datos en el archivo .env:
-`DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=nombre_basedatos
-DB_USERNAME=nombre_usuario
-DB_PASSWORD=contraseña_usuario`
+
+`DB_CONNECTION=mysql`
+`DB_HOST=127.0.0.1`
+`DB_PORT=3306`
+`DB_DATABASE=nombre_basedatos`
+`DB_USERNAME=nombre_usuario`
+`DB_PASSWORD=contraseña_usuario`
 
 7. Ejecuta las migraciones de la base de datos:
 `php artisan migrate`
