@@ -48,7 +48,7 @@
                                         @if($producto->imagen && file_exists(public_path('imagenes/' . $producto->imagen)))
                                             <img src="{{ asset('imagenes/' . $producto->imagen) }}" alt="" width="100" data-action="zoom">
                                         @else
-                                            <img src="{{ asset('img/producto.png') }}" alt="50" width="50" data-action="zoom">
+                                            <img src="{{ asset('img/producto.png') }}" alt="50" width="50">
                                         @endif
                                     </div>
                                 </div>
@@ -75,7 +75,9 @@
                                         <i data-lucide="check-square" class="w-4 h-4 mr-1 text-primary"></i> Editar
                                     </a>
                                     <form action="{{ route('productos.destroy', $producto->id) }}" method="POST">
-                            <button type="submit" class="btn btn-danger w-24">Eliminar</button>
+                            <button type="submit" class="flex items-center mr-3 text-danger">
+                                    <i data-lucide="trash-2" class="w-4 h-4 mr-2 text-danger"></i> Eliminar
+                            </button>
                             @csrf
                             @method('DELETE')
                         </form>

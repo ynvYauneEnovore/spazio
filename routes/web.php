@@ -9,6 +9,7 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ClientesController;
 use App\Http\Controllers\ProductosController;
 use App\Http\Controllers\ClasesController;
+use App\Http\Controllers\CasillerosController;
 
 /*
 |--------------------------------------------------------------------------
@@ -64,6 +65,17 @@ Route::middleware('auth')->group(function() {
             'update' => 'clases.update',
             'destroy' => 'clases.destroy',
         ]);
+
+        Route::resource('casilleros', CasillerosController::class)->names([
+            'index' => 'casilleros.index',
+            'create' => 'casilleros.create',
+            'store' => 'casilleros.store',
+            'show' => 'casilleros.show',
+            'edit' => 'casilleros.edit',
+            'update' => 'casilleros.update',
+            'destroy' => 'casilleros.destroy',
+        ]);
+
 
 
         Route::get('/', 'inicioAdmin')->name('inicioAdmin');

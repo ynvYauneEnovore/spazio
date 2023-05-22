@@ -18,29 +18,25 @@
                   <div class="mt-6 -mb-6 intro-y">
                     <div class="alert alert-dismissible show box bg-primary text-white flex items-center mb-6" role="alert">
                         <span>
-                            Nuevo:
+                            Accesos:&nbsp;&nbsp;&nbsp;
 
-<a href="{{ route('asistenciasAdmin') }}" class="btn btn-dark mr-1 mb-2 text-white">
+<a href="{{ route('asistenciasAdmin') }}" class="btn btn-success mr-1 mb-2 text-white">
   ASISTENCIA
-  <i data-loading-icon="hearts" data-color="white" class="w-4 h-4 ml-2"></i>
 </a>
 
 <a href="{{ route('clientes.index') }}" class="btn btn-success mr-1 mb-2 text-white">
-  _CLIENTE
+  CLIENTE
 </a>
 <a href="{{ route('productos.index') }}" class="btn btn-success mr-1 mb-2 text-white">
-  _PRODUCTOS
+  PRODUCTOS
 </a>
-<a href="{{ route('clientes.index') }}" class="btn btn-success mr-1 mb-2 text-white">
-  _CLASES
+<a href="{{ route('clases.index') }}" class="btn btn-success mr-1 mb-2 text-white">
+  CLASES
 </a>
-<a href="{{ route('clientes.index') }}" class="btn btn-warning mr-1 mb-2 text-white">
+<a href="{{ route('casilleros.index') }}" class="btn btn-success mr-1 mb-2 text-white">
   CASILLETOS
 </a>
                         </span>
-                        <button type="button" class="btn-close text-white" data-bs-dismiss="alert" aria-label="Close">
-                            <i data-lucide="x" class="w-4 h-4"></i>
-                        </button>
                     </div>
                 </div>
 

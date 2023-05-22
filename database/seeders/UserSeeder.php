@@ -7,6 +7,7 @@ use Illuminate\Support\Str;
 use App\Models\User;
 use App\Models\Cliente;
 use App\Models\Productos;
+use App\Models\Casillero;
 
 
 class UserSeeder extends Seeder
@@ -70,5 +71,13 @@ class UserSeeder extends Seeder
 
                // Fake Productos
                Productos::factory()->times(20)->create();
+
+               \App\Models\Casillero::insert([
+                [
+                           'disponible' => '1',
+                       ]
+                   ]);
+               // Generar 10 casilleros de ejemplo
+        Casillero::factory()->times(49)->create();
     }
 }

@@ -60,12 +60,13 @@
                                     <a class="flex items-center mr-3 text-primary" href="{{ route('clases.show', $clases->id) }}">
                                         <i data-lucide="check-square" class="w-4 h-4 mr-1 text-primary"></i> Ver
                                     </a>
-                                    <a class="flex items-center mr-3 text-primary" href="{{ route('clases.destroy', $clases->id) }}">
+                                    <a class="flex items-center mr-3 text-primary" href="{{ route('clases.edit', $clases->id) }}">
                                         <i data-lucide="check-square" class="w-4 h-4 mr-1 text-primary"></i> Editar
                                     </a>
 
                                     <form action="{{ route('clases.destroy', $clases->id) }}" method="POST">
-                            <button type="submit" class="btn btn-danger w-24">Eliminar</button>
+                            <button type="submit" class="flex items-center mr-3 text-danger">
+                            <i data-lucide="trash-2" class="w-4 h-4 mr-1 text-danger"></i>Eliminar</button>
                             @csrf
                             @method('DELETE')
                         </form>

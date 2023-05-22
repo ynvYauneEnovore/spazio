@@ -50,8 +50,8 @@
                             <i data-lucide="check-square" class="w-6 h-6"></i>
                             </a>
                             <form action="{{ route('clientes.destroy', $cliente->id) }}" method="POST">
-                            <button type="submit" class="btn btn-danger w-12">
-                            <i data-lucide="trash" class="w-6 h-6"></i>
+                            <button type="submit" class="w-8 h-8 rounded-full flex items-center justify-center border dark:border-darkmode-400 ml-2 text-danger zoom-in tooltip" title="Eliminar">
+                            <i data-lucide="trash-2" class="w-6 h-6"></i>
                             </button>
                             @csrf
                             @method('DELETE')
@@ -74,29 +74,5 @@
                 </div>
             </div>
             @endforeach
-            <!-- BEGIN: Delete Confirmation Modal -->
-    <div id="delete-confirmation-modal" class="modal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body p-0">
-                    <div class="p-5 text-center">
-                        <i data-lucide="x-circle" class="w-16 h-16 text-danger mx-auto mt-3"></i>
-                        <div class="text-3xl mt-5">¿Estás seguro?</div>
-                        <div class="text-slate-500 mt-2">¿Realmente deseas eliminar este registro?<br>Este proceso no se puede deshacer.</div>
-                    </div>
-                    <div class="px-5 pb-8 text-center">
-                        <form action="{{ route('clientes.destroy', $cliente->id) }}" method="POST">
-                            <button type="button" data-tw-dismiss="modal" class="btn btn-outline-secondary w-24 mr-1">Cancelar</button>
-                            <button type="submit" class="btn btn-danger w-24">Eliminar</button>
-                            @csrf
-                            @method('DELETE')
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- END: Delete Confirmation Modal -->
-            <!-- END: Users Layout -->
             {!! $clientes->links() !!}
 @endsection
