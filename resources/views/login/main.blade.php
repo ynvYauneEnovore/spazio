@@ -12,13 +12,13 @@
                 <a href="" class="-intro-x flex items-center pt-5">
                     <img alt="mancuernas-en-x" class="w-10" src="{{ asset('img/logo-1.png') }}">
                     <span class="text-white text-lg ml-3">
-                        aGYMsa
+                        Spazio
                     </span>
                 </a>
                 <div class="my-auto">
                     <img alt="logo_tiburon_furioso" class="-intro-x w-1/2 -mt-20" src="{{ asset('img/logo.png') }}">
                     <div class="-intro-x text-white font-medium text-4xl leading-tight mt-10">Únete a nosotros para un <br> estilo de vida más saludable.</div>
-                    <div class="-intro-x mt-5 text-lg text-white text-opacity-70 dark:text-slate-400">Agymsa &copy; 2023</div>
+                    <div class="-intro-x mt-5 text-lg text-white text-opacity-70 dark:text-slate-400">Spazio &copy; 2023</div>
                 </div>
             </div>
             <!-- END: Login Info -->

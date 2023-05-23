@@ -34,6 +34,18 @@ class PageController extends Controller
         return view('pages/admin/asistencias');
     }
 
+           /**
+     * Adminitración de la asistencias.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function clasesAdmin()
+    {
+        return view('pages/admin/clases');
+    }
+
+
 
          /**
      * Adminitración de la asistencias.
@@ -274,7 +286,4 @@ class PageController extends Controller
     {
         return view('pages/soporte/documentacion');
     }
-
-
-
 }

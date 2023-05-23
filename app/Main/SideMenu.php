@@ -40,12 +40,20 @@ class SideMenu
                             ],
                             'title' => 'Productos'
                         ],
+                        'clasesAdmin' => [
+                            'icon' => 'book-open',
+                            'route_name' => 'clasesAdmin',
+                            'params' => [
+                                'layout' => 'side-menu',
+                            ],
+                            'title' => 'Clases'
+                        ],
 
 
             'devider',
 
             'productos' => [
-                'icon' => 'shopping-cart',
+                'icon' => 'edit-3',
                 'title' => 'Registros',
                 'sub_menu' => [
                     'clientes.index' => [

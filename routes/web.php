@@ -82,6 +82,8 @@ Route::middleware('auth')->group(function() {
 
         Route::get('asistenciasAdmin', 'asistenciasAdmin')->name('asistenciasAdmin');
         Route::get('productosAdmin', 'productosAdmin')->name('productosAdmin');
+        Route::get('clasesAdmin', 'clasesAdmin')->name('clasesAdmin');
+
 
 
         Route::get('verClientes', 'verClientes')->name('verClientes');
