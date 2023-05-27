@@ -15,6 +15,9 @@ return new class extends Migration
     {
         Schema::create('venta', function (Blueprint $table) {
             $table->id();
+            $table->decimal('monto', 19, 2);
+            $table->datetime('created');
+            $table->foreignId('fk_user_id_venta')->constrained('users');
             $table->timestamps();
         });
     }
