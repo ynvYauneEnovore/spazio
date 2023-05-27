@@ -23,7 +23,7 @@ return new class extends Migration
             $table->integer('min')->nullable();
             $table->integer('max')->nullable();
             $table->decimal('stock', 19, 2)->default(0);
-
+            $table->foreignId('fk_user_id_productos')->nullable()->constrained('users');
             $table->timestamps();
         });
     }

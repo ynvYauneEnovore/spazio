@@ -15,6 +15,8 @@ return new class extends Migration
     {
         Schema::create('pago_matricula', function (Blueprint $table) {
             $table->id();
+            $table->decimal('monto', 19, 2);
+            $table->foreignId('fk_user_id_pago_matricula')->constrained('users');
             $table->timestamps();
         });
     }

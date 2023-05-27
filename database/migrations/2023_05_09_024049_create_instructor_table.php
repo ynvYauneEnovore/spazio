@@ -15,6 +15,9 @@ return new class extends Migration
     {
         Schema::create('instructor', function (Blueprint $table) {
             $table->id();
+            $table->string('nombre', 200);
+            $table->string('telefono', 45)->nullable();
+            $table->foreignId('fk_user_id_instructor')->constrained('users');
             $table->timestamps();
         });
     }

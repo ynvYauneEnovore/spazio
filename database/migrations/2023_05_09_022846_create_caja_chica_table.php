@@ -15,6 +15,15 @@ return new class extends Migration
     {
         Schema::create('caja_chica', function (Blueprint $table) {
             $table->id();
+            $table->decimal('montoInicial', 19, 2);
+            $table->decimal('montoSistema', 19, 2);
+            $table->decimal('montoDeclarado', 19, 2);
+            $table->decimal('diferencia', 19, 2);
+            $table->datetime('fechaInicio');
+            $table->datetime('fechaCierre');
+            $table->text('Detalle');
+            $table->boolean('estado', '1');
+            $table->foreignId('fk_user_id_caja_chica')->constrained('users');
             $table->timestamps();
         });
     }

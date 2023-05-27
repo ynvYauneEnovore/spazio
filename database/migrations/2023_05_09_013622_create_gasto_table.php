@@ -18,9 +18,7 @@ return new class extends Migration
             $table->dateTime('created')->nullable();
             $table->string('descripcion', 545)->nullable();
             $table->decimal('monto', 19, 2)->nullable()->default(0);
-            $table->unsignedBigInteger('tipo_gasto_id')->nullable();
-            $table->unsignedBigInteger('usuario_id')->nullable();
-            $table->unsignedBigInteger('caja_chica_id')->nullable();
+            $table->foreignId('fk_user_id_gasto')->constrained('users');
             $table->timestamps();
         });
     }

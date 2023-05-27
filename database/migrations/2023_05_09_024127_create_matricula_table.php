@@ -15,6 +15,14 @@ return new class extends Migration
     {
         Schema::create('matricula', function (Blueprint $table) {
             $table->id();
+            $table->datetime('created');
+            $table->date('inicio');
+            $table->date('fin');
+            $table->decimal('precio', 19, 2);
+            $table->boolean('estado', '1');
+            $table->integer('nvisitas');
+            $table->foreignId('fk_user_id_matricula')->constrained('users');
+
             $table->timestamps();
         });
     }
