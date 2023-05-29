@@ -18,6 +18,8 @@ return new class extends Migration
             $table->string('nombre', 200);
             $table->string('telefono', 45)->nullable();
             $table->foreignId('fk_user_id_instructor')->constrained('users');
+            $table->foreignId('fk_tipo_clase_id_instructor')->constrained('tipo_clase');
+
             $table->timestamps();
         });
     }

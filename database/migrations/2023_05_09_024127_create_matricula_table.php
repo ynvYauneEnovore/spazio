@@ -22,6 +22,10 @@ return new class extends Migration
             $table->boolean('estado', '1');
             $table->integer('nvisitas');
             $table->foreignId('fk_user_id_matricula')->constrained('users');
+            $table->foreignId('fk_caja_chica_id_matricula')->constrained('caja_chica');
+            $table->foreignId('fk_cliente_id_matricula')->constrained('cliente');
+            $table->foreignId('fk_clase_id_matricula')->constrained('clases');
+
 
             $table->timestamps();
         });

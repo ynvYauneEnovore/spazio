@@ -25,7 +25,6 @@ return new class extends Migration
             $table->decimal('stock', 19, 2)->default(0);
             $table->foreignId('fk_user_id_productos')->nullable()->constrained('users');
             $table->foreignId('fk_categorias_servicios_id_services')->nullable()->constrained('categorias_producto');
-
             $table->timestamps();
         });
     }

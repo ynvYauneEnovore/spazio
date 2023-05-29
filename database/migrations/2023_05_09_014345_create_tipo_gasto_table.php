@@ -13,12 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('Gasto', function (Blueprint $table) {
+        Schema::create('tipo_gasto', function (Blueprint $table) {
             $table->id();
-            $table->dateTime('created')->nullable();
-            $table->string('descripcion', 545)->nullable();
-            $table->decimal('monto', 19, 2)->nullable()->default(0);
-            $table->foreignId('fk_user_id_gasto')->constrained('users');
+            $table->string('Descripcion', 200)->nullable();
             $table->timestamps();
         });
     }
@@ -30,6 +27,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('gasto');
+        Schema::dropIfExists('tipo_gasto');
     }
 };

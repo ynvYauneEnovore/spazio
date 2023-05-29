@@ -17,6 +17,10 @@ return new class extends Migration
             $table->id();
             $table->decimal('monto', 19, 2);
             $table->foreignId('fk_user_id_pago_matricula')->constrained('users');
+            $table->foreignId('fk_caja_chica_id_pago_matricula')->constrained('caja_chica');
+            $table->foreignId('fk_matricula_id_pago_matricula')->constrained('matricula');
+
+
             $table->timestamps();
         });
     }

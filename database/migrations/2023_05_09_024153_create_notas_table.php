@@ -18,6 +18,8 @@ return new class extends Migration
             $table->string('Descripcion', 445)->nullable();
             $table->datetime('created');
             $table->foreignId('fk_user_id_nota')->constrained('users');
+            $table->foreignId('fk_intructor_id_notas')->constrained('instructor');
+
             $table->timestamps();
         });
     }

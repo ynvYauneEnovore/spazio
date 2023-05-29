@@ -49,7 +49,7 @@ class ClientesController extends Controller
         $imagenNombreS = time().'.'.$request->imagenPerfil->extension();
         $request->imagenPerfil->move(public_path('imagenes'), $imagenNombreS);
 
-        Clientes::create([
+        Cliente::create([
             'codigoCliente' => $request->codigoCliente,
             'nombre' => $request->nombre,
             'direccion' => $request->direccion,

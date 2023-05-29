@@ -18,6 +18,7 @@ class CreateClasesTable extends Migration
             $table->time('Horainicio')->nullable();
             $table->time('horafin')->nullable();
             $table->tinyInteger('estado')->nullable()->default(1);
+            $table->foreignId('fk_tipo_clase_id_clases')->constrained('tipo_clase');
             $table->timestamps();
         });
     }

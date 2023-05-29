@@ -18,6 +18,10 @@ return new class extends Migration
             $table->decimal('monto', 19, 2);
             $table->datetime('created');
             $table->foreignId('fk_user_id_venta')->constrained('users');
+            $table->foreignId('fk_caja_chica_id_venta')->constrained('caja_chica');
+            $table->foreignId('fk_cliente_id_venta')->constrained('cliente');
+
+
             $table->timestamps();
         });
     }
