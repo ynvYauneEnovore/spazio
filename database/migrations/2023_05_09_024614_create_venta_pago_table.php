@@ -15,6 +15,11 @@ return new class extends Migration
     {
         Schema::create('venta_pago', function (Blueprint $table) {
             $table->id();
+            $table->decimal('monto', 19, 4);
+            $table->dateTime('created')->nullable();
+            $table->foreignId('fk_user_id_venta_pago')->constrained('users');
+            $table->foreignId('fk_tipo_pago_id_venta_pago')->constrained('tipo_pago');
+            $table->foreignId('fk_venta_id_venta_pago')->constrained('venta');
             $table->timestamps();
         });
     }

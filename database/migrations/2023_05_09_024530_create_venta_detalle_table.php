@@ -20,6 +20,8 @@ return new class extends Migration
             $table->datetime('created');
             $table->decimal('descuento', 19, 2)->nullable();
             $table->foreignId('fk_categorias_servicios_id_venta_detalle')->nullable()->constrained('productos');
+            $table->foreignId('fk_venta_id_venta_detalle')->nullable()->constrained('venta');
+
             $table->timestamps();
         });
     }

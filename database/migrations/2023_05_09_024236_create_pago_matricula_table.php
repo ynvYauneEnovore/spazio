@@ -19,7 +19,7 @@ return new class extends Migration
             $table->foreignId('fk_user_id_pago_matricula')->constrained('users');
             $table->foreignId('fk_caja_chica_id_pago_matricula')->constrained('caja_chica');
             $table->foreignId('fk_matricula_id_pago_matricula')->constrained('matricula');
-
+            $table->foreignId('fk_tipo_pago_id_pago_matricula')->constrained('tipo_pago');
 
             $table->timestamps();
         });
